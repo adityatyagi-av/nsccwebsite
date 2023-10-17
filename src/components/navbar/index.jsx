@@ -1,86 +1,119 @@
 "use client"
 import React from "react";
-import {Navbar, NavbarBrand,NavbarMenuToggle, NavbarMenu,NavbarMenuItem,NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
-import Image from "next/image";
 
-export default function Header() {
+import { Navbar, 
+  NavbarBrand, 
+  NavbarContent, 
+  NavbarItem, 
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem, Button} from "@nextui-org/react";
+
+import Image from "next/image.js";
+import Link from "next/link";
+
+export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
+    
+    {
+      "id":1,
+      "link":"/",
+      "name":"Home"
+    },
+    {
+      "id":2,
+      "link":"/about",
+      "name":"About"
+    },
+    {
+      "id":3,
+      "link":"/projects",
+      "name":"Projects"
+    },
+    {
+      "id":4,
+      "link":"/contact",
+      "name":"Contact Us"
+    },
+    {
+      "id":5,
+      "link":"/login",
+      "name":"Login"
+    },
+
   ];
 
   return (
-    <Navbar
-      isBordered
-      isMenuOpen={isMenuOpen}
-      onMenuOpenChange={setIsMenuOpen}
+    <Navbar 
+    maxWidth="xl"
+    onMenuOpenChange={setIsMenuOpen} 
+    className="shadow-md pb-1.5"
     >
-      <NavbarContent className="sm:hidden" justify="start">
-        <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
-      </NavbarContent>
-
-      <NavbarContent className="sm:hidden pr-3" justify="center">
-        <NavbarBrand>
-          <Image src="/nscclogo.png" width={100} height={100} alt=""/>
-          <p className="font-bold text-inherit">ACME</p>
+    
+      <NavbarContent className="flex ">
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          className="sm:hidden"
+        />
+        <NavbarBrand className="mb-1.5">
+          <Image src="/nscclogo.png" width={130} height={90} alt="image"/>
+          
         </NavbarBrand>
       </NavbarContent>
+    
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarBrand>
-        <Image src="/nscclogo.png" width={100} height={100} alt=""/>
-          <p className="font-bold text-inherit">ACME</p>
-        </NavbarBrand>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Features
+      <NavbarContent className="hidden sm:flex mt-3 gap-9 mb-2" justify="center">
+        
+      <NavbarItem>
+          <Link color="foreground" href="/">
+            Home
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
+
+        <NavbarItem>
+          <Link color="foreground" href="/about">
+            About
+          </Link>
+        </NavbarItem>
+        <NavbarItem >
+          <Link href="/services" aria-current="page">
+            Projects
+          </Link>
+        </NavbarItem>
+        <NavbarItem >
+          <Link href="/services" aria-current="page">
+            Blogs
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
+          <Link color="foreground"  href="/contact">
+            Contact Us
           </Link>
         </NavbarItem>
       </NavbarContent>
-
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
+        
         <NavbarItem>
-          <Button as={Link} color="warning" href="#" variant="flat">
-            Sign Up
+          <Button as={Link} color="primary" href="/register" variant="flat">
+            Login
           </Button>
         </NavbarItem>
       </NavbarContent>
-
       <NavbarMenu>
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem key={item.id}>
             <Link
-              className="w-full"
+            onClick={()=>setIsMenuOpen(false)}
               color={
-                index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
+                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
               }
-              href="#"
+              className="w-full"
+              href={item.link}
               size="lg"
             >
-              {item}
+              {item.name}
             </Link>
           </NavbarMenuItem>
         ))}
