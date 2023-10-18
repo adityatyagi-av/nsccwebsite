@@ -1,6 +1,7 @@
 "use client"
-import React, { useState } from 'react'
-import { Player } from '@lottiefiles/react-lottie-player';
+
+
+import PlayerAnimation from '@/components/player';
 import { TypeAnimation } from 'react-type-animation';
  
 const Hero = () => {
@@ -44,13 +45,7 @@ const Hero = () => {
             </main>
 
             <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
-            <Player
-                        autoplay
-                        controls
-                        loop
-                        mode="normal"
-                        src="https://lottie.host/d64d6a5f-65c7-40f7-8fb8-b3dcbc2ab559/XJUQmtiO0h.json"
-                    ></Player>
+            <PlayerAnimation link={"https://lottie.host/d64d6a5f-65c7-40f7-8fb8-b3dcbc2ab559/XJUQmtiO0h.json"}/>
            </div>
         </main>
     </main>

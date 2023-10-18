@@ -11,11 +11,15 @@ const Projects = () => {
     return (
       <section className="bg-white dark:bg-gray-900 max-w-screen-xl mx-auto">
     <div className="container px-6 py-8 mx-auto">
-    <h1 className="text-2xl text-center font-semibold text-gray-800 mx-auto lg:text-4xl dark:text-white">Projects</h1>
+    <h1 className="text-2xl text-center font-semibold text-gray-800 mx-auto lg:text-4xl dark:text-white">Projects
+    <div class="flex justify-center mx-auto mt-6">
+                <span class="inline-block w-44 h-1 bg-blue-500 rounded-full"></span>
+                <span class="inline-block w-6 h-1 mx-1 bg-blue-500 rounded-full"></span>
+                <span class="inline-block w-2 h-1 bg-blue-500 rounded-full"></span>
+            </div></h1>
 
         <div className="mt-8 xl:mt-16 lg:flex lg:-mx-12">
             <div className="lg:mx-12">
-                
 
                 <div className="mt-4 space-y-4 lg:mt-8">
                 <button onClick={()=>changeProjectTab(1)} className="block active:text-blue-500 text-gray-500 dark:text-gray-300 hover:underline">UI/UX</button>
