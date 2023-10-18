@@ -36,7 +36,7 @@ export const Step = () => {
           </h2>
          
         </div>
-        <div className="grid gap-8 row-gap-0 lg:grid-cols-3">
+        <div className="grid gap-3 md:gap-8 row-gap-0 lg:grid-cols-3">
           <div className="relative text-center">
           <div className="flex items-center justify-center w-60 h-60 mx-auto mb-4 ">
             <Player
