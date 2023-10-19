@@ -11,6 +11,7 @@ import { Navbar,
 
 import Image from "next/image.js";
 import Link from "next/link";
+import ResourcesDropdown from "./resourcesDropdown";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -34,11 +35,26 @@ export default function App() {
     },
     {
       "id":4,
+      "link":"/resources",
+      "name":"Resources"
+    },
+    {
+      "id":5,
+      "link":"/blogs",
+      "name":"Blogs"
+    },
+    {
+      "id":6,
+      "link":"/team",
+      "name":"Team"
+    },
+    {
+      "id":7,
       "link":"/contact",
       "name":"Contact Us"
     },
     {
-      "id":5,
+      "id":8,
       "link":"/login",
       "name":"Login"
     },
@@ -58,7 +74,7 @@ export default function App() {
           className="sm:hidden"
         />
         <NavbarBrand className="mb-1.5">
-          <Image src="/nscclogo.png" width={130} height={90} alt="image"/>
+          <Image src="/nscclogo.png" width={130} height={90} className="mt-3" alt="image"/>
           
         </NavbarBrand>
       </NavbarContent>
@@ -78,13 +94,21 @@ export default function App() {
           </Link>
         </NavbarItem>
         <NavbarItem >
-          <Link href="/services" aria-current="page">
+          <Link href="/projects" aria-current="page">
             Projects
           </Link>
         </NavbarItem>
         <NavbarItem >
-          <Link href="/services" aria-current="page">
+          <ResourcesDropdown/>
+        </NavbarItem>
+        <NavbarItem >
+          <Link href="/blogs" aria-current="page">
             Blogs
+          </Link>
+        </NavbarItem>
+        <NavbarItem >
+          <Link href="/team" aria-current="page">
+            Team
           </Link>
         </NavbarItem>
         <NavbarItem>
@@ -96,7 +120,7 @@ export default function App() {
       <NavbarContent justify="end">
         
         <NavbarItem>
-          <Button as={Link} color="primary" href="/register" variant="flat">
+          <Button as={Link} color="primary" href="/login" variant="flat">
             Login
           </Button>
         </NavbarItem>
