@@ -38,11 +38,11 @@ export default function App() {
       "link":"/resources",
       "name":"Resources"
     },
-    {
-      "id":5,
-      "link":"/blogs",
-      "name":"Blogs"
-    },
+    // {
+    //   "id":5,
+    //   "link":"/blogs",
+    //   "name":"Blogs"
+    // },
     {
       "id":6,
       "link":"/team",
@@ -83,7 +83,7 @@ export default function App() {
       <NavbarContent className="hidden sm:flex mt-3 gap-9 mb-2" justify="center">
         
       <NavbarItem>
-          <Link color="foreground" href="/">
+          <Link color="foreground" href="/" >
             Home
           </Link>
         </NavbarItem>
@@ -101,11 +101,11 @@ export default function App() {
         <NavbarItem >
           <ResourcesDropdown/>
         </NavbarItem>
-        <NavbarItem >
+        {/* <NavbarItem >
           <Link href="/blogs" aria-current="page">
             Blogs
           </Link>
-        </NavbarItem>
+        </NavbarItem> */}
         <NavbarItem >
           <Link href="/team" aria-current="page">
             Team
