@@ -16,13 +16,13 @@ export default function ResourcesDropdown() {
           Resources
         </Button>
       </DropdownTrigger>
-      <DropdownMenu >
-      <DropdownItem key="dsa"><Link href="resources/dsa">DSA</Link></DropdownItem>
-      <DropdownItem key="uiux"><Link href="resources/uiux">UI / UX</Link ></DropdownItem>
-        <DropdownItem key="webdev"><Link href="resources/webdev">Web Development</Link></DropdownItem>
-        <DropdownItem key="android"><Link href="resources/android">Android Development</Link></DropdownItem>
-        <DropdownItem key="aiml"><Link href="resources/aiml">AI / ML</Link></DropdownItem>
-        <DropdownItem key="arvr"><Link href="resources/arvr">AR / VR</Link></DropdownItem>
+      <DropdownMenu aria-label="Static Actions">
+      <DropdownItem textValue="uiux" key="dsa"><Link href="resources/dsa">DSA</Link></DropdownItem>
+      <DropdownItem key="uiux" textValue="uiux"><Link href="resources/uiux">UI / UX</Link ></DropdownItem>
+        <DropdownItem key="webdev" textValue="Web Development"><Link href="resources/webdev">Web Development</Link></DropdownItem>
+        <DropdownItem textValue="uiux" key="android"><Link href="resources/android">Android Development</Link></DropdownItem>
+        <DropdownItem textValue="uiux" key="aiml"><Link href="resources/aiml">AI / ML</Link></DropdownItem>
+        <DropdownItem textValue="uiux" key="arvr"><Link href="resources/arvr">AR / VR</Link></DropdownItem>
         
       </DropdownMenu>
     </Dropdown>
