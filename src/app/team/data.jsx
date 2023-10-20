@@ -49,7 +49,7 @@ export const TeamMembers=[
         name:'Vikas Kumar',
         role:'Coordinator',
         imageUrl:'https://media.licdn.com/dms/image/C4D03AQFlLMURb7sKxQ/profile-displayphoto-shrink_400_400/0/1655796639359?e=1703116800&v=beta&t=7GDdzIurH1R25Bjo10mwCn8M4nrMLqmf2IBFoAe4TA4',
-        description:'DSA and CP Enthusiast',
+        description:'AI/ML and AR/VR Lead',
         linkedin:'https://www.linkedin.com/in/vikaskumar142001/',
         link:''
     },
@@ -71,6 +71,51 @@ export const TeamMembers=[
         linkedin:'https://www.linkedin.com/in/divyanshi-srivastava-775925222/',
         link:''
     },
-
+    
+    {
+        id:9,
+        name:'Saurabh',
+        role:'Coordinator',
+        imageUrl:'/3rdyear/saurabh.jpg',
+        description:'AR / VR Lead',
+        linkedin:'https://www.linkedin.com/in/saurabh-kashyap-b7ab0b257/',
+        link:'https://github.com/saurabh873'
+    },
+    {
+        id:10,
+        name:'Vishakha Bansal',
+        role:'Coordinator',
+        imageUrl:'3rdyear/vishakha.jpg',
+        description:'DSA and CP Enthusiast',
+        linkedin:'https://www.linkedin.com/in/vishakha-bansal-56188b225',
+        link:'https://github.com/Vishakha-Baansal'
+    },
+    {
+        id:11,
+        name:'Abhishek Verma',
+        role:'Coordinator',
+        imageUrl:'https://media.licdn.com/dms/image/D4D03AQEhg4ZBLQX-vA/profile-displayphoto-shrink_400_400/0/1672057309815?e=1703116800&v=beta&t=W_EtfbhTvEGHofY6SU98OKzdhRvzcyrEj_MLztiu5FE',
+        description:'DSA and CP Enthusiast',
+        linkedin:'https://www.linkedin.com/in/abhishek-verma-b39878228/',
+        link:''
+    },
+    {
+        id:12,
+        name:'Shivani Rajput',
+        role:'Coordinator',
+        imageUrl:'/3rdyear/shivani.jpg',
+        description:'Web Developer',
+        linkedin:'https://www.linkedin.com/in/shivani-rajput-b54785232/',
+        link:'https://github.com/shivaniirajput'
+    },
+    {
+        id:13,
+        name:'Vikas Kumar',
+        role:'Coordinator',
+        imageUrl:'https://media.licdn.com/dms/image/C4D03AQFMBY7-LuZB0g/profile-displayphoto-shrink_400_400/0/1667998916308?e=1703116800&v=beta&t=O2aUS3KhS4LUZUceoBsDd7i15InDX531SbWtDc4Nsls',
+        description:'DSA and CP Enthusiast',
+        linkedin:'https://www.linkedin.com/in/vikas-kumar-48429924b/',
+        link:''
+    },
     
 ]
