@@ -4,6 +4,13 @@ import Link from "next/link"
 
 
 const Page = () => {
+  const Resources=[
+    {
+      id:1,
+      playerLink:'',
+      link:''
+    }
+  ]
   return (
     <>
     <section className="bg-white dark:bg-gray-900 mx-auto max-w-screen-xl">
@@ -16,9 +23,15 @@ const Page = () => {
             </div></h1>
 
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4"> 
-        <Link href="">
-        <CardBox link="https://lottie.host/d64d6a5f-65c7-40f7-8fb8-b3dcbc2ab559/XJUQmtiO0h.json"/>
+        {
+          Resources.map((resource)=>{
+            return(
+              <Link className="" key={resource.id} href={resource.link}>
+        <CardBox link={resource.playerLink}/>
         </Link>
+            )
+          })
+        }
            </div>                       
     </div>
 </section>

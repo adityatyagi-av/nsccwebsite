@@ -1,5 +1,5 @@
 import React from "react";
-import {Card, CardFooter, Image, Button} from "@nextui-org/react";
+import {Card} from "@nextui-org/react";
 import PlayerAnimation from "../player";
 
 export default function CardBox({link}) {
@@ -7,7 +7,7 @@ export default function CardBox({link}) {
     <Card
       isFooterBlurred
       radius="lg"
-      className="border-none max-w-xs max-h-60"
+      className="border-none max-w-xs items-center justify-center h-56 max-h-60"
     >
       <PlayerAnimation link={link}/>
       
