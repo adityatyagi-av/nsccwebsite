@@ -1,9 +1,9 @@
-const page = () => {
+const DSA = () => {
   return (
     <div>
-      
+      gawgs
     </div>
   )
 }
 
-export default page
+export default DSA

@@ -1,4 +1,4 @@
-const page = () => {
+const WebDev = () => {
   return (
     <div>
       
@@ -6,4 +6,4 @@ const page = () => {
   )
 }
 
-export default page
+export default WebDev

@@ -1,7 +1,7 @@
 'use client'
 
 
-import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react";
+import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem} from "@nextui-org/react";
 import Link from "next/link";
 
 export default function ResourcesDropdown() {
@@ -17,12 +17,12 @@ export default function ResourcesDropdown() {
         </Button>
       </DropdownTrigger>
       <DropdownMenu aria-label="Static Actions">
-      <DropdownItem textValue="uiux" key="dsa"><Link href="resources/dsa">DSA</Link></DropdownItem>
-      <DropdownItem key="uiux" textValue="uiux"><Link href="resources/uiux">UI / UX</Link ></DropdownItem>
-        <DropdownItem key="webdev" textValue="Web Development"><Link href="resources/webdev">Web Development</Link></DropdownItem>
-        <DropdownItem textValue="uiux" key="android"><Link href="resources/android">Android Development</Link></DropdownItem>
-        <DropdownItem textValue="uiux" key="aiml"><Link href="resources/aiml">AI / ML</Link></DropdownItem>
-        <DropdownItem textValue="uiux" key="arvr"><Link href="resources/arvr">AR / VR</Link></DropdownItem>
+      <DropdownItem textValue="dsa" key="dsa"><Link href="/resources/dsa">DSA</Link></DropdownItem>
+      <DropdownItem key="uiux" textValue="uiux"><Link href="/resources/uiux">UI / UX</Link ></DropdownItem>
+        <DropdownItem key="webdev" textValue="webdev"><Link href="/resources/webdev">Web Development</Link></DropdownItem>
+        <DropdownItem textValue="android" key="android"><Link href="/resources/android">Android Development</Link></DropdownItem>
+        <DropdownItem textValue="aiml" key="aiml"><Link href="/resources/aiml">AI / ML</Link></DropdownItem>
+        <DropdownItem textValue="arvr" key="arvr"><Link href="/resources/arvr">AR / VR</Link></DropdownItem>
         
       </DropdownMenu>
     </Dropdown>

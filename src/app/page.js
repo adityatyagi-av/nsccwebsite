@@ -1,4 +1,5 @@
-import CTA from '@/components/home'
+
+import CTA from '@/components/home/CTA'
 import Hero from '@/components/home/Hero'
 import { Step } from '@/components/home/Steps'
 import CoreTeam from '@/components/home/coreteam'
