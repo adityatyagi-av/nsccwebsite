@@ -1,3 +1,4 @@
+import CTA from '@/components/home'
 import Hero from '@/components/home/Hero'
 import { Step } from '@/components/home/Steps'
 import CoreTeam from '@/components/home/coreteam'
@@ -12,9 +13,11 @@ const page = () => {
     <main>
       <Hero/>
       <Step/>
-      
+      <CTA/>
       <Projects/>
+      
       <Domains/>
+      
       <CoreTeam/>
       <Faq/>
     </main>
