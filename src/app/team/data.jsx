@@ -182,7 +182,7 @@ export const SecondYear=[
     },
     {   
         id:13,
-        name:'Shubh Aggarwal',
+        name:'Shubh Agarwal',
         imageUrl:'/2ndyear/shubh.jpg'
     },
     {   
