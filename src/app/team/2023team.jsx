@@ -1,5 +1,5 @@
 import CoreTeam from "@/components/home/coreteam";
-import { TeamMembers } from "./data";
+import { ThirdYear , SecondYear} from "./data";
 
 export const Team = () => {
     
@@ -19,7 +19,7 @@ export const Team = () => {
         </div>
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {
-            TeamMembers.map((member)=>{
+            ThirdYear.map((member)=>{
                 return(
                     <div key={member.id}>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
@@ -57,13 +57,40 @@ export const Team = () => {
           </div>
                 )
             })
-          }
-          
-          
-              
-           
+          } 
         </div>
       </div>
+ 
+    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="mx-auto mb-10 lg:max-w-xl sm:text-center">
+      <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white"> Our Talented Members
+        <div class="flex justify-center mx-auto mt-6">
+                <span class="inline-block w-64 h-1 bg-blue-500 rounded-full"></span>
+                <span class="inline-block w-12 h-1 mx-1 bg-blue-500 rounded-full"></span>
+                <span class="inline-block w-4 h-1 bg-blue-500 rounded-full"></span>
+            </div></h1>
+      </div>
+      <div className="grid gap-10 mx-auto lg:max-w-screen-xl grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
+        {SecondYear.map((member)=>{
+          return(
+            <div key={member.id} className="flex flex-col items-center">
+            <img
+              className="object-cover w-20 h-20 mb-2 rounded-full shadow"
+              src={member.imageUrl}
+              alt={member.name}
+            />
+            <div className="flex flex-col items-center">
+              <p className="text-lg mx-auto text-center font-bold">{member.name}</p>
+              
+            </div>
+          </div>
+          )
+        })}
+        
+        
+      </div>
+    </div>
+ 
       </>
     );
   };

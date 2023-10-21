@@ -1,4 +1,4 @@
-export const TeamMembers=[
+export const ThirdYear=[
     {
         id:1,
         name:'Aditya Tyagi',
@@ -117,5 +117,191 @@ export const TeamMembers=[
         linkedin:'https://www.linkedin.com/in/vikas-kumar-48429924b/',
         link:''
     },
+    
+]
+export const SecondYear=[
+    {   
+        id:1,
+        name:'Pratyush Sharma',
+        imageUrl:'/2ndyear/pratyush.jpg'
+    },
+    {   
+        id:2,
+        name:'Yash Sharma',
+        imageUrl:'/2ndyear/yash.jpg'
+    },
+    {   
+        id:3,
+        name:'Gaurav Yadav',
+        imageUrl:'/2ndyear/gaurav.jpg'
+    },
+    {   
+        id:4,
+        name:'Ishita Tyagi',
+        imageUrl:'/2ndyear/ishita.jpg'
+    },
+    {   
+        id:5,
+        name:'Archit Aggarwal',
+        imageUrl:'/2ndyear/archit.jpg'
+    },
+    {   
+        id:6,
+        name:'Rohit Verma',
+        imageUrl:'/2ndyear/rohit.jpg'
+    },
+    {   
+        id:7,
+        name:'Ansh Singh',
+        imageUrl:'/2ndyear/ansh.jpg'
+    },
+    {   
+        id:8,
+        name:'Santosh Kumar',
+        imageUrl:'/2ndyear/santosh.jpg'
+    },
+    {   
+        id:9,
+        name:'Ankit Jaiswal',
+        imageUrl:'/2ndyear/ankit.jpg'
+    },
+    {   
+        id:10,
+        name:'Simon Srivastava',
+        imageUrl:'https://media.licdn.com/dms/image/D4D03AQH5u_HuKIIR3g/profile-displayphoto-shrink_400_400/0/1693940496246?e=1703116800&v=beta&t=atXuh3hDR2DU67n2JBGWQGWetLB1Bxs1JqbMk14KtIQ'
+    },
+    {   
+        id:11,
+        name:'Praveer Nandan',
+        imageUrl:'/2ndyear/praveer.jpg'
+    },
+    {   
+        id:12,
+        name:'Rishu Raj',
+        imageUrl:'/2ndyear/rishu.jpg'
+    },
+    {   
+        id:13,
+        name:'Shubh Aggarwal',
+        imageUrl:'/2ndyear/shubh.jpg'
+    },
+    {   
+        id:14,
+        name:'Mohd. Sauban',
+        imageUrl:'/2ndyear/sauban.jpg'
+    },
+    {   
+        id:15,
+        name:'Harsh Tyagi',
+        imageUrl:'/2ndyear/harsh.jpg'
+    },
+    {   
+        id:16,
+        name:'Adarsh Tiwari',
+        imageUrl:'/2ndyear/adarsh.jpg'
+    },
+    {   
+        id:17,
+        name:'Krishna Garg',
+        imageUrl:'/2ndyear/krishna.jpg'
+    },
+    {   
+        id:18,
+        name:'Divya Verma',
+        imageUrl:'/2ndyear/divya.jpg'
+    },
+    {   
+        id:19,
+        name:'Shipra Maurya',
+        imageUrl:'/2ndyear/shipra.jpg'
+    },
+    {   
+        id:20,
+        name:'Prasannam Tiwari',
+        imageUrl:'/2ndyear/prasannam.jpg'
+    },
+    {   
+        id:21,
+        name:'Aniket Ray',
+        imageUrl:'/2ndyear/aniket.jpg'
+    },
+    {   
+        id:22,
+        name:'Priyanshu Mishra',
+        imageUrl:'/2ndyear/priyanshu.jpg'
+    },
+    {   
+        id:22,
+        name:'Gungun Jain',
+        imageUrl:'/2ndyear/gungun.jpg'
+    },
+    {   
+        id:23,
+        name:'Ankit kumar Jha',
+        imageUrl:'/2ndyear/ankitjha.jpg'
+    },
+    {   
+        id:24,
+        name:'Harsh Verma',
+        imageUrl:'/2ndyear/harshverma.jpg'
+    },
+    {   
+        id:25,
+        name:'Aditya Mohan Gupta',
+        imageUrl:'/2ndyear/aditya.jpg'
+    },
+    {   
+        id:26,
+        name:'Prapti Sharma',
+        imageUrl:'/2ndyear/prapti.jpg'
+    },
+    {   
+        id:27,
+        name:'Anuj Sharma',
+        imageUrl:'/2ndyear/anuj.jpg'
+    },
+    {   
+        id:28,
+        name:'Ankit Singh',
+        imageUrl:'/2ndyear/ankitsingh.jpg'
+    },
+    {   
+        id:29,
+        name:'Shruti Yadav',
+        imageUrl:'/2ndyear/shruti.jpg'
+    },
+    {   
+        id:30,
+        name:'Tripti Garg',
+        imageUrl:'/2ndyear/tripti.jpg'
+    },
+    {   
+        id:31,
+        name:'Shobhika',
+        imageUrl:'/2ndyear/shobhika.jpg'
+    },
+    {   
+        id:32,
+        name:'Mukul Aggarwal',
+        imageUrl:'/2ndyear/mukul.jpg'
+    },
+    {   
+        id:33,
+        name:'Ayush Aggarwal',
+        imageUrl:'/2ndyear/ayush.jpg'
+    },
+    {   
+        id:34,
+        name:'Hardik Garg',
+        imageUrl:'/2ndyear/hardik.jpg'
+    },
+    {   
+        id:35,
+        name:'Neelabh Srivastava',
+        imageUrl:'/2ndyear/neelabh.jpg'
+    },
+    
+    
+
     
 ]
