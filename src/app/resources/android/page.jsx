@@ -1,9 +1,11 @@
+import ComingSoon from '@/components/comingsoon'
+
 
 const page = () => {
   return (
-    <div>
-      hello
-    </div>
+    <>
+      <ComingSoon/>
+    </>
   )
 }
 

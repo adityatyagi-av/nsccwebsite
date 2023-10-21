@@ -1,7 +1,7 @@
 'use client'
 
 
-import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem} from "@nextui-org/react";
+import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react";
 import Link from "next/link";
 
 export default function ResourcesDropdown() {

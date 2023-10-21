@@ -1,9 +1,12 @@
-const DSA = () => {
+import ComingSoon from '@/components/comingsoon'
+
+
+const page = () => {
   return (
-    <div>
-      gawgs
-    </div>
+    <>
+      <ComingSoon/>
+    </>
   )
 }
 
-export default DSA
+export default page

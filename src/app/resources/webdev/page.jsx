@@ -1,9 +1,12 @@
-const WebDev = () => {
+import ComingSoon from '@/components/comingsoon'
+
+
+const page = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <ComingSoon/>
+    </>
   )
 }
 
-export default WebDev
+export default page
