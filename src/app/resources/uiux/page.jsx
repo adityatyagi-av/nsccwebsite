@@ -26,7 +26,7 @@ const Page = () => {
         {
           Resources.map((resource)=>{
             return(
-              <Link className="" key={resource.id} href={resource.link}>
+              <Link key={resource.id} href={resource.link}>
         <CardBox link={resource.playerLink}/>
         </Link>
             )
