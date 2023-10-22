@@ -10,10 +10,10 @@ export const Team = () => {
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white"> Our Talented Team
-        <div class="flex justify-center mx-auto mt-6">
-                <span class="inline-block w-52 h-1 bg-blue-500 rounded-full"></span>
-                <span class="inline-block w-12 h-1 mx-1 bg-blue-500 rounded-full"></span>
-                <span class="inline-block w-4 h-1 bg-blue-500 rounded-full"></span>
+        <div className="flex justify-center mx-auto mt-6">
+                <span className="inline-block w-52 h-1 bg-blue-500 rounded-full"></span>
+                <span className="inline-block w-12 h-1 mx-1 bg-blue-500 rounded-full"></span>
+                <span className="inline-block w-4 h-1 bg-blue-500 rounded-full"></span>
             </div></h1>
           
         </div>
@@ -63,10 +63,10 @@ export const Team = () => {
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="mx-auto mb-10 lg:max-w-xl sm:text-center">
       <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white"> Our Talented Members
-        <div class="flex justify-center mx-auto mt-6">
-                <span class="inline-block w-64 h-1 bg-blue-500 rounded-full"></span>
-                <span class="inline-block w-12 h-1 mx-1 bg-blue-500 rounded-full"></span>
-                <span class="inline-block w-4 h-1 bg-blue-500 rounded-full"></span>
+        <div className="flex justify-center mx-auto mt-6">
+                <span className="inline-block w-64 h-1 bg-blue-500 rounded-full"></span>
+                <span className="inline-block w-12 h-1 mx-1 bg-blue-500 rounded-full"></span>
+                <span className="inline-block w-4 h-1 bg-blue-500 rounded-full"></span>
             </div></h1>
       </div>
       <div className="grid gap-10 mx-auto lg:max-w-screen-xl grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">

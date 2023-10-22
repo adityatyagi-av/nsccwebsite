@@ -1,3 +1,4 @@
+
 import CardBox from "@/components/card"
 import Link from "next/link"
 
@@ -28,8 +29,8 @@ const Resources=[
 
 
 const Page = () => {
-  <script src="https://apis.google.com/js/api.js"></script>
   
+
   return (
 
     <>
