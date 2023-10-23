@@ -6,7 +6,7 @@ const PlayListItems=async (playlistid)=>{
       "url": 'https://www.googleapis.com/youtube/v3/playlistItems',
       "params":{
       'part':'snippet',
-      'maxResults':'50',
+      'maxResults':'60',
       'key':'AIzaSyC7dXH4DpGAhN5xconGyzY9UiZslTiCbGU',
       'playlistId':id,
     }})
