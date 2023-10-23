@@ -62,7 +62,7 @@ useEffect( () => {
           </div>   
         </Tab>
         <Tab key="docs" title="DOCS">
-          
+        <h1>randoom</h1>
         </Tab>
         
       </Tabs>
