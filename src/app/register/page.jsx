@@ -107,6 +107,7 @@ const supabase = createClient('https://yiliuqjfmacevlslkaiw.supabase.co', 'eyJhb
               console.log('Data inserted successfully:', data);
               // Redirect to a success page or perform any other action
               setFormSubmitted(true)
+              router.push('/submitted')
             }
           } catch (error) {
             console.error('An error occurred:', error);
@@ -220,7 +221,7 @@ const supabase = createClient('https://yiliuqjfmacevlslkaiw.supabase.co', 'eyJhb
       color="success"
       
       showValueLabel={true}
-    />{router.push('/submitted')}</>
+    /></>
     }
               </ModalBody>
               <ModalFooter>
