@@ -12,10 +12,15 @@ import { Navbar,
 import Image from "next/image.js";
 import Link from "next/link";
 import ResourcesDropdown from "./resourcesDropdown";
+import { useRouter } from 'next/navigation'
+
 
 export default function App() {
+  const router=useRouter();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
+const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Toggle the menu state
+  };
   const menuItems = [
     
     {
@@ -127,9 +132,13 @@ export default function App() {
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={item.id}>
-            <Link
-            onClick={()=>setIsMenuOpen(false)}
+          <NavbarMenuItem key={item.id} onClick={toggleMenu}>
+            <Button
+            onClick={()=>{
+              setIsMenuOpen(false)
+              router.push(`${item.link}`)
+            }
+            }
               color={
                 index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
               }
@@ -138,7 +147,7 @@ export default function App() {
               size="lg"
             >
               {item.name}
-            </Link>
+            </Button>
           </NavbarMenuItem>
         ))}
       </NavbarMenu>
