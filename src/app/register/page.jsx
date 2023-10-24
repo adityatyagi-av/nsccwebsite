@@ -1,14 +1,21 @@
 "use client"
-import React from 'react'
+
+import {CircularProgress,Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
+import { createClient } from '@supabase/supabase-js';
+import {useState} from 'react'
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import Input from '@/components/input';
 import InputRadio from '@/components/inputRadio';
 import InputSelect from '@/components/inputSelect';
-import { Button } from '@nextui-org/react';
+
 import InputTextArea from '@/components/inputTextArea';
+import { useRouter } from "next/navigation";
 const page = () => {
-    
+  const router=useRouter();
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const {isOpen, onOpen, onOpenChange} = useDisclosure();
+const supabase = createClient('https://yiliuqjfmacevlslkaiw.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlpbGl1cWpmbWFjZXZsc2xrYWl3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTc5NzQyNjgsImV4cCI6MjAxMzU1MDI2OH0.uGzaKOKEh5mhC6Pe3jRwd-qUOaSyyz0tGpEI2XbcvRo');
     const validationSchema = Yup.object({
         name: Yup.string()
         .max(25, 'Must be 25 characters or less')
@@ -69,12 +76,44 @@ const page = () => {
           
         },
         validationSchema: validationSchema,
-        onSubmit: (values) => {
-          alert(JSON.stringify(values, null, 2));
-          console.log(JSON.stringify(values, null, 2));
-          // console.log(JSON.stringify(values, null, 2));
-    
+        onSubmit: async (values) => {
+          onOpen();
+          try {
+            
+            const { data, error } = await supabase
+              .from('coreteamthirdyear') 
+              .insert([
+                {
+                  name: values.name,
+                  email: values.email,
+                  id: values.id,
+                  whatsappNumber: values.whatsappNumber,
+                  gender: values.gender,
+                  branch: values.branch,
+                  residence: values.residence,
+                  domain: values.domain,
+                  domainProficiency: values.domainProficiency,
+                  github: values.github,
+                  linkedin: values.linkedin,
+                  link: values.link,
+                  experience: values.experience,
+                  commitment: values.commitment,
+                },
+              ]);
+        
+            if (error) {
+              console.error('Error inserting data:', error);
+            } else {
+              console.log('Data inserted successfully:', data);
+              // Redirect to a success page or perform any other action
+              setFormSubmitted(true)
+            }
+          } catch (error) {
+            console.error('An error occurred:', error);
+          }
         },
+        
+        
       });
       const generalOptions = [
         { label: 'Yes', value: 'yes' },
@@ -164,6 +203,34 @@ const page = () => {
 
 
         <Button color='primary' type='submit' >Register</Button>
+
+
+
+      
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange} isDismissable={false} className="mx-auto">
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
+              <ModalBody>
+                {formSubmitted?<CircularProgress size="lg" aria-label="Loading..." label="Submitting Form"/>:<><CircularProgress
+      label="SuccesFully Submitted"
+      size="lg"
+      value={100}
+      color="success"
+      
+      showValueLabel={true}
+    />{router.push('/submitted')}</>
+    }
+              </ModalBody>
+              <ModalFooter>
+                
+              </ModalFooter>
+            </>
+          )}
+        </ModalContent>
+      </Modal>
+
       </form>
     </div>
     </>
