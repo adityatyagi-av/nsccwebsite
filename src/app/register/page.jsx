@@ -6,6 +6,7 @@ import Input from '@/components/input';
 import InputRadio from '@/components/inputRadio';
 import InputSelect from '@/components/inputSelect';
 import { Button } from '@nextui-org/react';
+import InputTextArea from '@/components/inputTextArea';
 const page = () => {
     
     const validationSchema = Yup.object({
@@ -23,7 +24,18 @@ const page = () => {
           gender: Yup.string().required('Required'),
           branch: Yup.string().required('Required'),  
           residence: Yup.string().required('Required'),  
-          domain: Yup.string().required('Required'),     
+          domain: Yup.string().required('Required'),
+          domainProficiency:Yup.number().required('Required'),
+          github:Yup.string()
+          .url('Invalid URL format'),
+          linkedin:Yup.string()
+          .url('Invalid URL format')
+          .required('Link is required'),
+          link:Yup.string()
+          .url('Invalid URL format'),
+          experience:Yup.string()
+          .required('Required'),
+          commitment: Yup.string().required('Required'),
           // resume: Yup.mixed()
           // .test('fileFormat', 'Invalid file format. Only PDF or DOCX are allowed.', (value) => {
           //   if (!value) return true;
@@ -47,6 +59,12 @@ const page = () => {
           branch:'',
           residence:'',
           domain:'',
+          domainProficiency:'',
+          github:'',
+          linkedin:'',
+          link:'',
+          experience:'',
+          commitment:'',
           // resume: null,
           
         },
@@ -58,6 +76,10 @@ const page = () => {
     
         },
       });
+      const generalOptions = [
+        { label: 'Yes', value: 'yes' },
+        { label: 'No', value: 'no' }
+      ];
       const genderOptions = [
         { label: 'Male', value: 'male' },
         { label: 'Female', value: 'female' }
@@ -87,13 +109,23 @@ const page = () => {
         { label: 'UI / UX', value: 'uiux' },
         { label: 'Web Development', value: 'webdev' }
       ];
+      const proficiencyOptions = [
+        { label: 5, value: 5 },
+        { label: 4, value: 4 },
+        { label: 3, value: 3 },
+        { label: 2, value: 2 },
+        { label: 1, value: 1 },
+       
+
+        
+      ];
     
     
   return (
     <>
     
-    <div className='max-w-screen-md mx-auto my-10'>
-    <h2 className="max-w-lg mb-6 font-sans text-3xl  font-bold leading-none tracking-tight text-gray-900 sm:text-4xl ">
+    <div className='max-w-screen-sm mx-auto my-10'>
+    <h2 className="max-w-lg  mx-3 mb-6 font-sans text-3xl  font-bold leading-none tracking-tight text-gray-900 sm:text-4xl ">
             <span className="relative inline-block">
             
               <span className="relative">JOIN OUR <span className='text-blue-700'>CORE TEAM</span> </span>
@@ -118,7 +150,19 @@ const page = () => {
         <InputRadio value="residence" label="Day Scholar or Hosteller" options={residenceOptions} formikTouched={formik.touched.residence} formikError={formik.errors.residence} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
         
         <InputSelect value="domain" label="Select your Domain" options={domainOptions} formikTouched={formik.touched.branch} formikError={formik.errors.domain} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+        <InputRadio value="domainProficiency" label="How much you are proficient in your selected Domain" options={proficiencyOptions} formikTouched={formik.touched.domainProficiency} formikError={formik.errors.domainProficiency} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
         
+        <Input className="mt-4" value="github" label="Github Profile Link" placeHolder="https://github.com/adityatyagi-av" formikTouched={formik.touched.github} formikError={formik.errors.github} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.github} type="text" />
+
+        <Input className="mt-4" value="linkedin" label="Linkedin Profile Link" placeHolder="https://www.linkedin.com/in/adityatyagiav/" formikTouched={formik.touched.linkedin} formikError={formik.errors.linkedin} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.linkedin} type="text" />
+
+        <Input className="mt-4" value="link" label="Any other Profile Link to share" placeHolder="https://www.behance.net/abhinavfs" formikTouched={formik.touched.link} formikError={formik.errors.link} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.link} type="text" />
+
+        <InputTextArea value="experience" label="Why you want to join NSCC ?" placeHolder="" formikTouched={formik.touched.experience} formikError={formik.errors.experience} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.experience} />
+        
+        <InputRadio value="commitment" label="Would you be able to commit your time and effort to work on live projects as a core team member of NSCC KIET?" options={generalOptions} formikTouched={formik.touched.commitment} formikError={formik.errors.commitment} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+
+
         <Button color='primary' type='submit' >Register</Button>
       </form>
     </div>
