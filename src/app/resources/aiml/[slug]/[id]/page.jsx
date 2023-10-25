@@ -8,12 +8,12 @@ const [data, setData] = useState();
     const getVideo=async()=>{
         const result=await FetchVideo(params.id); 
         setData(result)
-        console.log(result)
+        
     }
     useEffect( () => {
         getVideo();
       }, []); 
-    console.log(params)
+    
   return (
     <div className='max-w-screen-xl mx-auto my-10'>
         <h1>

@@ -15,7 +15,7 @@ const page = () => {
   const router=useRouter();
   const [formSubmitted, setFormSubmitted] = useState(false);
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
-const supabase = createClient('https://yiliuqjfmacevlslkaiw.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlpbGl1cWpmbWFjZXZsc2xrYWl3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTc5NzQyNjgsImV4cCI6MjAxMzU1MDI2OH0.uGzaKOKEh5mhC6Pe3jRwd-qUOaSyyz0tGpEI2XbcvRo');
+const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY );
     const validationSchema = Yup.object({
         name: Yup.string()
         .max(25, 'Must be 25 characters or less')
