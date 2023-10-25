@@ -51,15 +51,34 @@ const topandroidprojects=[
     }
 ]
 const topuiuxprojects=[
+    
     {
-        id:1,
-        title:'',
-        developer:'',
-        projectImage:'',
-        imageUrl:'',
-        profileLink:'',
-        projectLink:'',
-    }
+        id:5,
+        title:'Nike Shopping UI',
+        developer:'Abhinav',
+        projectImage:'projects/uiux/nike.jpg',
+        imageUrl:'https://media.licdn.com/dms/image/D4D03AQHtabWqzDOxjA/profile-displayphoto-shrink_400_400/0/1689803955352?e=1703116800&v=beta&t=CM9GszTUccY-btMTMZZTdd86uWSZpftvqUo8aYoFF1c',
+        profileLink:'https://www.behance.net/abhinavfs',
+        projectLink:'https://www.behance.net/gallery/173851145/Nike-Shopping-website',
+    },
+    {
+        id:6,
+        title:'Nissan Car UI',
+        developer:'Abhinav',
+        projectImage:'projects/uiux/nissan.jpg',
+        imageUrl:'https://media.licdn.com/dms/image/D4D03AQHtabWqzDOxjA/profile-displayphoto-shrink_400_400/0/1689803955352?e=1703116800&v=beta&t=CM9GszTUccY-btMTMZZTdd86uWSZpftvqUo8aYoFF1c',
+        profileLink:'https://www.behance.net/abhinavfs',
+        projectLink:'https://www.behance.net/gallery/173715143/NIssan',
+    },
+    {
+        id:10,
+        title:'Harmonize X',
+        developer:'Abhinav',
+        projectImage:'projects/uiux/harmonizex.jpg',
+        imageUrl:'https://media.licdn.com/dms/image/D4D03AQHtabWqzDOxjA/profile-displayphoto-shrink_400_400/0/1689803955352?e=1703116800&v=beta&t=CM9GszTUccY-btMTMZZTdd86uWSZpftvqUo8aYoFF1c',
+        profileLink:'https://www.behance.net/abhinavfs',
+        projectLink:'https://www.behance.net/gallery/162271959/HarmonizeX',
+    },
 ]
 const topwebprojects=[
     {
