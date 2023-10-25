@@ -104,7 +104,8 @@ const toggleMenu = () => {
           </Link>
         </NavbarItem>
         <NavbarItem >
-          <ResourcesDropdown/>
+        <Link href="/resources" aria-current="page">
+          Resources</Link>
         </NavbarItem>
         {/* <NavbarItem >
           <Link href="/blogs" aria-current="page">

@@ -12,17 +12,10 @@ export default function Page({params}) {
   const setData=async ()=>{
     let playListID='';
   switch (params.slug) {
-    case 'html':
-      playListID='PLu71SKxNbfoDBNF5s-WH6aLbthSEIMhMI'
+    case 'figma':
+      playListID='PLlHtucAD9KT2VKBwCZooIvDAiJQZ0Hrur'
       break; 
-    case 'css':
-      playListID='PLhzIaPMgkbxBk9-drEC0MBPqEOXpVlwY4'
-      break;
-    case 'js':
-      playListID='PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37'
-      break;
-    case 'react':
-      playListID='PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige'
+   
     default:
       break;
   }

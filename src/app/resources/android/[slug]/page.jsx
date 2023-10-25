@@ -12,17 +12,13 @@ export default function Page({params}) {
   const setData=async ()=>{
     let playListID='';
   switch (params.slug) {
-    case 'html':
-      playListID='PLu71SKxNbfoDBNF5s-WH6aLbthSEIMhMI'
+    case 'flutter':
+      playListID='PLjVLYmrlmjGfGLShoW0vVX_tcyT8u1Y3E'
       break; 
-    case 'css':
-      playListID='PLhzIaPMgkbxBk9-drEC0MBPqEOXpVlwY4'
+    case 'kotlin':
+      playListID='PLRKyZvuMYSIMW3-rSOGCkPlO1z_IYJy3G'
       break;
-    case 'js':
-      playListID='PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37'
-      break;
-    case 'react':
-      playListID='PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige'
+   
     default:
       break;
   }

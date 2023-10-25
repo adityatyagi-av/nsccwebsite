@@ -1,10 +1,11 @@
 "use client"
 import React, { useState } from "react"; // Import React
 import { topaimlprojects,topandroidprojects,toparvrprojects,topuiuxprojects,topwebprojects } from "./data";
-import CardMapping from "@/components/cardMap";
+
+import CardMapping2 from "@/components/cardMap/index2";
 
 const Projects = () => {
-  const [tab, setTab] = useState(2)
+  const [tab, setTab] = useState(4)
   function changeProjectTab(e){
     setTab(e)
 
@@ -36,19 +37,19 @@ const Projects = () => {
                 
 
                     {(tab==1)&&(
-                        <CardMapping data={topuiuxprojects}/>
+                        <CardMapping2  data={topuiuxprojects}/>
                     )}
                     {(tab==2)&&(
-                        <CardMapping data={topwebprojects}/>
+                        <CardMapping2 data={topwebprojects}/>
                     )}
                     {(tab==3)&&(
-                        <CardMapping data={topandroidprojects}/>
+                        <CardMapping2 data={topandroidprojects}/>
                     )}
                     {(tab==4)&&(
-                        <CardMapping data={topaimlprojects}/>
+                        <CardMapping2 data={topaimlprojects}/>
                     )}
                     {(tab==5)&&(
-                        <CardMapping data={toparvrprojects}/>
+                        <CardMapping2 data={toparvrprojects}/>
                     )}
 
                     
