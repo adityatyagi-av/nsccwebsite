@@ -163,6 +163,7 @@ const supabase = createClient('https://yiliuqjfmacevlslkaiw.supabase.co', 'eyJhb
     
   return (
     <>
+    <title>Register to become Core Member of NSCC KIET | Technical Club Of KIET</title>
     
     <div className='max-w-screen-sm mx-auto my-10'>
     <h2 className="max-w-lg  mx-3 mb-6 font-sans text-3xl  font-bold leading-none tracking-tight text-gray-900 sm:text-4xl ">

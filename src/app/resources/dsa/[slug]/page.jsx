@@ -55,9 +55,11 @@ useEffect( () => {
   setData();
 }, []);
     
-   
+   const titles=params.slug
   return (
+    
     <div className="flex mx-auto w-full mt-5 flex-col">
+      <title>DSA Resources NSCC KIET | Technical Club Of KIET</title>
       <Tabs 
         aria-label="Options"
         className="mx-auto"        

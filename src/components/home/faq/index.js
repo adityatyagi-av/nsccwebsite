@@ -2,9 +2,9 @@ import React from 'react'
 
 const Faq = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 max-w-screen-xl mx-auto">
+    <section className="bg-white max-w-screen-xl mx-auto">
     <div className="container px-6 py-12 mx-auto">
-        <h1 className="text-2xl font-semibold text-gray-800 lg:text-3xl dark:text-white">Frequently asked questions</h1>
+        <h1 className="text-2xl font-semibold text-gray-800 lg:text-3xl ">Frequently asked questions</h1>
 
         <div className="grid grid-cols-1 gap-8 mt-8 lg:mt-16 md:grid-cols-2 xl:grid-cols-3">
             <div>
@@ -15,9 +15,9 @@ const Faq = () => {
                 </div>
 
                 <div>
-                    <h1 className="text-xl font-semibold text-gray-700 dark:text-white">What is NScc kiet? </h1>
+                    <h1 className="text-xl font-semibold text-gray-700 ">What is NScc kiet? </h1>
 
-                    <p className="mt-2 text-sm text-gray-500 dark:text-gray-300">
+                    <p className="mt-2 text-sm text-gray-500 ">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.
                     </p>
                 </div>
@@ -31,9 +31,9 @@ const Faq = () => {
                 </div>
 
                 <div>
-                    <h1 className="text-xl font-semibold text-gray-700 dark:text-white">What is NScc kiet?</h1>
+                    <h1 className="text-xl font-semibold text-gray-700 ">What is NScc kiet?</h1>
 
-                    <p className="mt-2 text-sm text-gray-500 dark:text-gray-300">
+                    <p className="mt-2 text-sm text-gray-500 ">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.
                     </p>
                 </div>
@@ -47,9 +47,9 @@ const Faq = () => {
                 </div>
 
                 <div>
-                    <h1 className="text-xl font-semibold text-gray-700 dark:text-white">What is NScc kiet?</h1>
+                    <h1 className="text-xl font-semibold text-gray-700 ">What is NScc kiet?</h1>
 
-                    <p className="mt-2 text-sm text-gray-500 dark:text-gray-300">
+                    <p className="mt-2 text-sm text-gray-500 ">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.
                     </p>
                 </div>
@@ -63,9 +63,9 @@ const Faq = () => {
                 </div>
 
                 <div>
-                    <h1 className="text-xl font-semibold text-gray-700 dark:text-white">What is NScc kiet?</h1>
+                    <h1 className="text-xl font-semibold text-gray-700 ">What is NScc kiet?</h1>
 
-                    <p className="mt-2 text-sm text-gray-500 dark:text-gray-300">
+                    <p className="mt-2 text-sm text-gray-500 ">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.
                     </p>
                 </div>
@@ -79,9 +79,9 @@ const Faq = () => {
                 </div>
 
                 <div>
-                    <h1 className="text-xl font-semibold text-gray-700 dark:text-white">What is NScc kiet?</h1>
+                    <h1 className="text-xl font-semibold text-gray-700 ">What is NScc kiet?</h1>
 
-                    <p className="mt-2 text-sm text-gray-500 dark:text-gray-300">
+                    <p className="mt-2 text-sm text-gray-500 ">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.
                     </p>
                 </div>
@@ -95,9 +95,9 @@ const Faq = () => {
                 </div>
 
                 <div>
-                    <h1 className="text-xl font-semibold text-gray-700 dark:text-white">What is NScc kiet?</h1>
+                    <h1 className="text-xl font-semibold text-gray-700 ">What is NScc kiet?</h1>
 
-                    <p className="mt-2 text-sm text-gray-500 dark:text-gray-300">
+                    <p className="mt-2 text-sm text-gray-500 ">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.
                     </p>
                 </div>

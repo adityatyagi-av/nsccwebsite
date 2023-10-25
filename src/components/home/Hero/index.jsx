@@ -10,9 +10,9 @@ const Hero = () => {
         <main className="items-center lg:flex">
             <main className="w-full lg:w-1/2">
                 <main className="lg:max-w-lg">
-                    <h1 className="text-3xl font-semibold text-gray-800 dark:text-white lg:text-6xl">NSCC <span className="text-blue-700 ">KIET</span></h1>
-                    <h2 className="mt-3 text-1xl font-semibold text-gray-400 dark:text-white lg:text-4xl">Technical Club Of KIET</h2>
-                    <h2 className="mt-3 text-1xl font-semibold text-blue-900 dark:text-white lg:text-4xl">
+                    <h1 className="text-3xl font-semibold text-gray-800 lg:text-6xl">NSCC <span className="text-blue-700 ">KIET</span></h1>
+                    <h2 className="mt-3 text-1xl font-semibold text-gray-400 lg:text-4xl">Technical Club Of KIET</h2>
+                    <h2 className="mt-3 text-1xl font-semibold text-blue-900 lg:text-4xl">
                         <TypeAnimation
                             sequence={[
                                 'Work on Live Projects',
