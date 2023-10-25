@@ -7,7 +7,7 @@ const PlayListItems=async (playlistid)=>{
       "params":{
       'part':'snippet',
       'maxResults':'100',
-      'key':'AIzaSyC7dXH4DpGAhN5xconGyzY9UiZslTiCbGU',
+      'key': process.env.NEXT_PUBLIC_YOUTUBE_API_KEY,
       'playlistId':id,
     }})
     return data.data.items;

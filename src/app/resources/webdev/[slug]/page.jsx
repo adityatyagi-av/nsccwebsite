@@ -48,7 +48,7 @@ useEffect( () => {
         <div className="grid gap-10 max-w-screen-xl mx-auto sm:grid-cols-2 lg:grid-cols-4">
          
           {videos?.map((video)=>{
-            console.log(video)
+          
             
             return(
               <VideoCard key={video.id} 
