@@ -29,6 +29,7 @@ useEffect( () => {
    
   return (
     <div className="flex mx-auto w-full mt-5 flex-col">
+      <title>AI/ML Resources NSCC KIET | Technical Club Of KIET</title>
       <Tabs 
         aria-label="Options"
         className="mx-auto"        

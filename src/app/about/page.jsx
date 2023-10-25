@@ -1,4 +1,5 @@
 import PlayerAnimation from "@/components/player";
+import Head from "next/head";
 
 const page = () => {
   const Activities=[
@@ -29,6 +30,10 @@ const page = () => {
   ]
   return (
     <>
+    
+    <title>About NSCC KIET | Technical Club Of KIET</title>
+    
+
     
     <div className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="grid gap-10 lg:grid-cols-2">

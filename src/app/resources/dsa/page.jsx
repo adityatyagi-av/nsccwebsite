@@ -70,6 +70,7 @@ const Page = () => {
   return (
 
     <>
+    <title>DSA Resources NSCC KIET | Technical Club Of KIET</title>
     
     <section className="bg-white dark:bg-gray-900 mx-auto max-w-screen-xl">
     <div className="container px-6 py-10 mx-auto">

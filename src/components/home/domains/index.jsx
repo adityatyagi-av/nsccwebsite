@@ -50,23 +50,23 @@ const Domains = () => {
         }
     ]
   return (
-    <section className="bg-white dark:bg-gray-900 max-w-screen-xl mt-2 md:mt-10 mx-auto">
-        <h1 className="text-2xl text-center font-semibold text-gray-800 mx-auto lg:text-4xl dark:text-white">Our Domains
-        <div class="flex justify-center mx-auto mt-6">
-                <span class="inline-block w-44 h-1 bg-blue-500 rounded-full"></span>
-                <span class="inline-block w-6 h-1 mx-1 bg-blue-500 rounded-full"></span>
-                <span class="inline-block w-2 h-1 bg-blue-500 rounded-full"></span>
+    <section className="bg-white  max-w-screen-xl mt-2 md:mt-10 mx-auto">
+        <h1 className="text-2xl text-center font-semibold text-gray-800 mx-auto lg:text-4xl ">Our Domains
+        <div className="flex justify-center mx-auto mt-6">
+                <span className="inline-block w-44 h-1 bg-blue-500 rounded-full"></span>
+                <span className="inline-block w-6 h-1 mx-1 bg-blue-500 rounded-full"></span>
+                <span className="inline-block w-2 h-1 bg-blue-500 rounded-full"></span>
             </div></h1>
 
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-10 md:grid-cols-2 xl:grid-cols-3">
             {domains.map((domain)=>{
                 return(
-                    <div key={domain.id} className="flex flex-col items-center p-4 border sm:p-6 rounded-xl dark:border-gray-700">
+                    <div key={domain.id} className="flex flex-col items-center p-4 border sm:p-6 rounded-xl ">
                         <div className="object-cover w-full rounded-md aspect-square">
                         <PlayerAnimation link={domain.animationLink}/>
                         </div>
                 
-                <h1 className="text-2xl font-semibold text-blue-700 capitalize dark:text-white">{domain.name}</h1>                
+                <h1 className="text-2xl font-semibold text-blue-700 capitalize ">{domain.name}</h1>                
             </div>
                 )
             })}

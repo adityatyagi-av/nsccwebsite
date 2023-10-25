@@ -3,6 +3,8 @@ import PlayerAnimation from "@/components/player"
 const page = () => {
   return (
     <>
+    <title>Contact to NSCC KIET | Technical Club Of KIET</title>
+    
       <section className="min-h-screen max-w-screen-xl mx-auto bg-white dark:bg-gray-900">
     <div className="container px-6 py-10 mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-10">

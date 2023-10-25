@@ -10,13 +10,13 @@ const Projects = () => {
   }
 
     return (
-      <section className="bg-white dark:bg-gray-900 max-w-screen-xl mx-auto">
+      <section className="bg-white max-w-screen-xl mx-auto">
     <div className="container px-6 py-8 mx-auto">
-    <h1 className="text-2xl text-center font-semibold text-gray-800 mx-auto lg:text-4xl dark:text-white">Projects
-    <div class="flex justify-center mx-auto mt-6">
-                <span class="inline-block w-44 h-1 bg-blue-500 rounded-full"></span>
-                <span class="inline-block w-6 h-1 mx-1 bg-blue-500 rounded-full"></span>
-                <span class="inline-block w-2 h-1 bg-blue-500 rounded-full"></span>
+    <h1 className="text-2xl text-center font-semibold text-gray-800 mx-auto lg:text-4xl ">Projects
+    <div className="flex justify-center mx-auto mt-6">
+                <span className="inline-block w-44 h-1 bg-blue-500 rounded-full"></span>
+                <span className="inline-block w-6 h-1 mx-1 bg-blue-500 rounded-full"></span>
+                <span className="inline-block w-2 h-1 bg-blue-500 rounded-full"></span>
             </div></h1>
 
         <div className="mt-8 xl:mt-16 md:flex gap-2 lg:-mx-12">
@@ -39,9 +39,9 @@ const Projects = () => {
                         <img className="object-cover w-full rounded-lg h-78 "
                             src="https://images.unsplash.com/photo-1621111848501-8d3634f82336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1565&q=80"
                             alt=""/>
-                        <h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize dark:text-white">Best website
+                        <h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize">Best website
                             collections</h2>
-                        <p className="mt-2 text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400 ">Website</p>
+                        <p className="mt-2 text-lg tracking-wider text-blue-500 uppercase  ">Website</p>
                     </div>
                     )}
                     {(tab==2)&&(
@@ -49,9 +49,9 @@ const Projects = () => {
                         <img className="object-cover w-full rounded-lg h-78 "
                             src="https://images.unsplash.com/photo-1621111848501-8d3634f82336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1565&q=80"
                             alt=""/>
-                        <h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize dark:text-white">Best website
+                        <h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize">Best website
                             collections</h2>
-                        <p className="mt-2 text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400 ">Website</p>
+                        <p className="mt-2 text-lg tracking-wider text-blue-500 uppercase">Website</p>
                     </div>
                     )}
                     {(tab==3)&&(
@@ -59,9 +59,9 @@ const Projects = () => {
                         <img className="object-cover w-full rounded-lg h-78  "
                             src="https://images.unsplash.com/photo-1621111848501-8d3634f82336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1565&q=80"
                             alt=""/>
-                        <h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize dark:text-white">Best website
+                        <h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize ">Best website
                             collections</h2>
-                        <p className="mt-2 text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400 ">Website</p>
+                        <p className="mt-2 text-lg tracking-wider text-blue-500 uppercase ">Website</p>
                     </div>
                     )}
                     {(tab==4)&&(
@@ -69,9 +69,9 @@ const Projects = () => {
                         <img className="object-cover w-full rounded-lg h-78  "
                             src="https://images.unsplash.com/photo-1621111848501-8d3634f82336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1565&q=80"
                             alt=""/>
-                        <h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize dark:text-white">Best 
+                        <h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize ">Best 
                             collections</h2>
-                        <p className="mt-2 text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400 ">Website</p>
+                        <p className="mt-2 text-lg tracking-wider text-blue-500 uppercase ">Website</p>
                     </div>
                     )}
                     {(tab==5)&&(
@@ -79,8 +79,8 @@ const Projects = () => {
                         <img className="object-cover w-full rounded-lg h-78  "
                             src="https://images.unsplash.com/photo-1621111848501-8d3634f82336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1565&q=80"
                             alt=""/>
-                        <h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize dark:text-white">Best ML</h2>
-                        <p className="mt-2 text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400 ">Website</p>
+                        <h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize ">Best ML</h2>
+                        <p className="mt-2 text-lg tracking-wider text-blue-500 uppercase">Website</p>
                     </div>
                     )}
 
