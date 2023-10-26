@@ -1,5 +1,4 @@
 "use client"
-
 import {CircularProgress,Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
 import { createClient } from '@supabase/supabase-js';
 import {useState} from 'react'
@@ -50,7 +49,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
           try {
             
             const { data, error } = await supabase
-              .from('') 
+              .from('bootcampregistration') 
               .insert([
                 {
                   name: values.name,
@@ -70,19 +69,17 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
               console.log('Data inserted successfully:', data);
               // Redirect to a success page or perform any other action
               setFormSubmitted(true)
-              router.push('/submitted')
+              router.push('/succesfull')
             }
           } catch (error) {
             console.error('An error occurred:', error);
+            router.push('/notsubmitted')
           }
         },
         
         
       });
-      const generalOptions = [
-        { label: 'Yes', value: 'yes' },
-        { label: 'No', value: 'no' }
-      ];
+     
       const genderOptions = [
         { label: 'Male', value: 'male' },
         { label: 'Female', value: 'female' }
@@ -109,7 +106,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
     <>
     <title>Apply for Android Development Bootcamp of NSCC KIET | Technical Club Of KIET</title>
     
-    <div className='max-w-screen-sm mx-auto my-10'>
+    <div className='max-w-screen-sm mx-auto my-5'>
     <h2 className="max-w-lg  mx-3 mb-6 font-sans text-3xl  font-bold leading-none tracking-tight text-gray-900 sm:text-4xl ">
             <span className="relative inline-block">
             
@@ -121,9 +118,9 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
       
         <Input className="mt-4" value="name" label="Enter your Name" placeHolder="Aditya Tyagi" formikTouched={formik.touched.name} formikError={formik.errors.name} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.name} type="text" />
       
-        <Input value="email" label="Your Email" placeHolder="adityatyagi@gmail.com" formikTouched={formik.touched.email} formikError={formik.errors.email} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.email} type="email"/>
+        <Input value="email" label="Your Email" placeHolder="dhruv.2125cs1130@kiet.edu" formikTouched={formik.touched.email} formikError={formik.errors.email} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.email} type="email"/>
 
-        <Input className="mt-4" value="id" label="Enter your ID" placeHolder="2125cs1001" formikTouched={formik.touched.id} formikError={formik.errors.id} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.id} type="text" />
+        <Input className="mt-4" value="id" label="Enter your Library ID" placeHolder="2125cs1130" formikTouched={formik.touched.id} formikError={formik.errors.id} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.id} type="text" />
     
         <Input value="whatsappNumber" label="Whatsapp Number" placeHolder="8088088088" formikTouched={formik.touched.whatsappNumber} formikError={formik.errors.whatsappNumber} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.whatsappNumber} type="tel"/>
              
@@ -136,7 +133,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
         
        
 
-        <Button color='primary' type='submit' >Register</Button>
+        <Button color='primary' type='submit'>Register</Button>
 
 
 
@@ -145,9 +142,9 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1">Bootcamp Registration Status</ModalHeader>
               <ModalBody>
-                {formSubmitted?<CircularProgress size="lg" aria-label="Loading..." label="Submitting Form"/>:<><CircularProgress
+                {!formSubmitted?<CircularProgress size="lg" aria-label="Loading..." label="Submitting Form"/>:<><CircularProgress
       label="SuccesFully Submitted"
       size="lg"
       value={100}
