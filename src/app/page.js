@@ -20,7 +20,7 @@ const page = () => {
       <Domains/>
       
       <CoreTeam/>
-      <Faq/>
+      {/* <Faq/> */}
     </main>
   )
 }

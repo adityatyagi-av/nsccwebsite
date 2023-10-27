@@ -27,7 +27,8 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
         .required('Required'),
           gender: Yup.string().required('Required'),
           branch: Yup.string().required('Required'),  
-          residence: Yup.string().required('Required'),  
+          residence: Yup.string().required('Required'),
+          laptop: Yup.string().required('Required'),  
          
          
       });
@@ -40,7 +41,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
           gender:'',
           branch:'',
           residence:'',
-         
+          laptop:'',
           
         },
         validationSchema: validationSchema,
@@ -59,7 +60,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
                   gender: values.gender,
                   branch: values.branch,
                   residence: values.residence,
-                  
+                  laptop:values.laptop,
                 },
               ]);
         
@@ -79,7 +80,11 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
         
         
       });
-     
+     const generalOptions=[
+      {
+        label:'Yes',value:'yes'},
+        {label:'No',value:'no'}
+     ]
       const genderOptions = [
         { label: 'Male', value: 'male' },
         { label: 'Female', value: 'female' }
@@ -128,6 +133,8 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
 
   
         <InputSelect value="branch" label="Select your Branch" options={branchOptions} formikTouched={formik.touched.branch} formikError={formik.errors.branch} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+
+        <InputRadio value="laptop" label="Do you have Laptop" options={generalOptions} formikTouched={formik.touched.laptop} formikError={formik.errors.laptop} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
         <InputRadio value="residence" label="Day Scholar or Hosteller" options={residenceOptions} formikTouched={formik.touched.residence} formikError={formik.errors.residence} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
         
