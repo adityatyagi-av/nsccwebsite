@@ -7,10 +7,10 @@ import { Navbar,
   NavbarItem, 
   NavbarMenuToggle,
   NavbarMenu,
-  NavbarMenuItem, Button} from "@nextui-org/react";
+  NavbarMenuItem, Button, Link} from "@nextui-org/react";
 
 import Image from "next/image.js";
-import Link from "next/link";
+// import Link from "next/link";
 
 import { useRouter } from 'next/navigation'
 
@@ -99,17 +99,17 @@ const toggleMenu = () => {
           </Link>
         </NavbarItem>
         <NavbarItem >
-          <Link href="/projects" aria-current="page">
+          <Link href="/projects" color="foreground">
             Projects
           </Link>
         </NavbarItem>
         <NavbarItem >
-        <Link href="/resources" aria-current="page">
+        <Link href="/resources" color="foreground">
           Resources</Link>
         </NavbarItem>
         
         <NavbarItem >
-          <Link href="/team" aria-current="page">
+          <Link href="/team" color="foreground">
             Team
           </Link>
         </NavbarItem>
@@ -130,7 +130,7 @@ const toggleMenu = () => {
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={item.id} onClick={toggleMenu}>
-            <Button
+            <Link 
             onClick={()=>{
               setIsMenuOpen(false)
               router.push(`${item.link}`)
@@ -144,7 +144,7 @@ const toggleMenu = () => {
               size="lg"
             >
               {item.name}
-            </Button>
+            </Link>
           </NavbarMenuItem>
         ))}
       </NavbarMenu>

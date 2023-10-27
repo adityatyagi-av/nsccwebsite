@@ -94,6 +94,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
         { label: 'Hosteller', value: 'hosteller' }
       ];
       const branchOptions = [
+        {label: 'Select Branch', value: 'select'},
         { label: 'CSE', value: 'cse' },
         { label: 'CS', value: 'cs' },
         { label: 'IT', value: 'it' },
