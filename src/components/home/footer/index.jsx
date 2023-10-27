@@ -54,7 +54,7 @@ const Footer = () => {
         <hr className="h-px my-6 bg-gray-200 border-none dark:bg-gray-700"/>
 
         <div>
-            <p className="text-center text-gray-500 dark:text-gray-400">Developed with ❤️ by Aditya Tyagi and Abhinav Chaudhary </p>
+            <p className="text-center text-gray-500 dark:text-gray-400">Developed with ❤️ by <a href='https://www.linkedin.com/in/adityatyagiav/' className='text-blue-900 underline font-medium'> Aditya Tyagi</a> and <a href='https://www.linkedin.com/in/abhinav-chaudhary-62349a22b/' className='text-blue-900 underline font-medium'> Abhinav Chaudhary</a></p>
         </div>
     </div>
 </footer>

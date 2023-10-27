@@ -23,7 +23,7 @@ const CTA = () => {
         <div>
             <h5 className="text-5xl font-bold text-white">
                 <span className="inline text-white">
-                    13
+                    15
                 </span>
                 <span className="text-indigo-200">
                     +
@@ -36,7 +36,7 @@ const CTA = () => {
         <div>
             <h5 className="text-5xl font-bold text-white">
                 <span className="inline text-white">
-                    10
+                    30
                 </span>
                 <span className="text-indigo-200">
                     +

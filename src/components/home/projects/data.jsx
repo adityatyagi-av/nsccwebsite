@@ -82,13 +82,31 @@ const topuiuxprojects=[
 ]
 const topwebprojects=[
     {
-        id:1,
-        title:'',
-        developer:'',
-        projectImage:'',
+        id:3,
+        title:'Blockchain Transaction Logger',
+        developer:'Ayush Chauhan',
+        projectImage:'projects/web/blockchainlogger.jpg',
+        imageUrl:'https://media.licdn.com/dms/image/D4D03AQG-83phbPPI5A/profile-displayphoto-shrink_400_400/0/1675856946994?e=1703116800&v=beta&t=g27e6h_mylovfoGI3cvXbnt6LIdHu782F1EKKirXELs',
+        profileLink:'https://www.linkedin.com/in/ayush-chauhan-bab008249/',
+        projectLink:'https://github.com/Ayush-2301/web-3.0',
+    },
+    {
+        id:4,
+        title:'Sorting Visualizer',
+        developer:'Ayush Chauhan',
+        projectImage:'projects/web/sorting.jpg',
+        imageUrl:'https://media.licdn.com/dms/image/D4D03AQG-83phbPPI5A/profile-displayphoto-shrink_400_400/0/1675856946994?e=1703116800&v=beta&t=g27e6h_mylovfoGI3cvXbnt6LIdHu782F1EKKirXELs',
+        profileLink:'https://www.linkedin.com/in/ayush-chauhan-bab008249/',
+        projectLink:'https://github.com/Ayush-2301/Sorting-Visualizer',
+    },
+    {
+        id:5,
+        title:'Choolha Chowka Website',
+        developer:'Team NSCC',
+        projectImage:'projects/web/choolhachowka.png',
         imageUrl:'',
-        profileLink:'',
-        projectLink:'',
-    }
+        profileLink:'https://github.com/adityatyagi-av',
+        projectLink:'https://choolhachowka.vercel.app/',
+    },
 ]
 export {topaimlprojects,toparvrprojects,topandroidprojects,topwebprojects,topuiuxprojects};
