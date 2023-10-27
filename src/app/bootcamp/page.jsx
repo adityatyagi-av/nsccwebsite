@@ -20,7 +20,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
         
       email: Yup.string().email('Invalid email address').required('Required'),
       id: Yup.string()
-        .max(17, 'Must be 17 characters or less')
+        .max(19, 'Must be 19 characters or less')
         .required('Required'),
         whatsappNumber: Yup.string()
         .matches(/^[0-9]{10}$/, '10 digit mobile number should be entered')
