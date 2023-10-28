@@ -23,7 +23,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
         
       email: Yup.string().email('Invalid email address').required('Required'),
       id: Yup.string()
-        .max(12, 'Must be 12 characters or less')
+        .max(19, 'Must be 19 characters or less')
         .required('Required'),
         whatsappNumber: Yup.string()
         .matches(/^[0-9]{10}$/, '10 digit mobile number should be entered')
@@ -32,28 +32,6 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
           branch: Yup.string().required('Required'),  
           residence: Yup.string().required('Required'),  
           domain: Yup.string().required('Required'),
-          domainProficiency:Yup.number().required('Required'),
-          github:Yup.string()
-          .url('Invalid URL format'),
-          linkedin:Yup.string()
-          .url('Invalid URL format')
-          .required('Link is required'),
-          link:Yup.string()
-          .url('Invalid URL format'),
-          experience:Yup.string()
-          .required('Required'),
-          commitment: Yup.string().required('Required'),
-          // resume: Yup.mixed()
-          // .test('fileFormat', 'Invalid file format. Only PDF or DOCX are allowed.', (value) => {
-          //   if (!value) return true;
-          //   const allowedFormats = ['application/pdf', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
-          //   return value && allowedFormats.includes(value.type);
-          // })
-          // .test('fileSize', 'File size must be less than 10MB', (value) => {
-          //   if (!value) return true;
-          //   return value && value.size <= 10 * 1024 * 1024;
-          // })
-          // .required('Resume is required'),
          
       });
       const formik = useFormik({
@@ -66,13 +44,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
           branch:'',
           residence:'',
           domain:'',
-          domainProficiency:'',
-          github:'',
-          linkedin:'',
-          link:'',
-          experience:'',
-          commitment:'',
-          // resume: null,
+          
           
         },
         validationSchema: validationSchema,
@@ -92,12 +64,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
                   branch: values.branch,
                   residence: values.residence,
                   domain: values.domain,
-                  domainProficiency: values.domainProficiency,
-                  github: values.github,
-                  linkedin: values.linkedin,
-                  link: values.link,
-                  experience: values.experience,
-                  commitment: values.commitment,
+                  
                 },
               ]);
         
@@ -191,19 +158,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
         <InputRadio value="residence" label="Day Scholar or Hosteller" options={residenceOptions} formikTouched={formik.touched.residence} formikError={formik.errors.residence} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
         
         <InputSelect value="domain" label="Select your Domain" options={domainOptions} formikTouched={formik.touched.branch} formikError={formik.errors.domain} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
-        <InputRadio value="domainProficiency" label="How much you are proficient in your selected Domain" options={proficiencyOptions} formikTouched={formik.touched.domainProficiency} formikError={formik.errors.domainProficiency} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
-        
-        <Input className="mt-4" value="github" label="Github Profile Link" placeHolder="https://github.com/adityatyagi-av" formikTouched={formik.touched.github} formikError={formik.errors.github} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.github} type="text" />
-
-        <Input className="mt-4" value="linkedin" label="Linkedin Profile Link" placeHolder="https://www.linkedin.com/in/adityatyagiav/" formikTouched={formik.touched.linkedin} formikError={formik.errors.linkedin} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.linkedin} type="text" />
-
-        <Input className="mt-4" value="link" label="Any other Profile Link to share" placeHolder="https://www.behance.net/abhinavfs" formikTouched={formik.touched.link} formikError={formik.errors.link} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.link} type="text" />
-
-        <InputTextArea value="experience" label="Why you want to join NSCC ?" placeHolder="" formikTouched={formik.touched.experience} formikError={formik.errors.experience} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.experience} />
-        
-        <InputRadio value="commitment" label="Would you be able to commit your time and effort to work on live projects as a core team member of NSCC KIET?" options={generalOptions} formikTouched={formik.touched.commitment} formikError={formik.errors.commitment} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
-
-
+       
         <Button color='primary' type='submit' >Register</Button>
 
 
