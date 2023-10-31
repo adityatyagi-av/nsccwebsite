@@ -19,7 +19,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
     const validationSchema = Yup.object({
         name: Yup.string()
         .max(25, 'Must be 25 characters or less')
-        .required('Required'),
+        ,
         
       email: Yup.string().email('Invalid email address').required('Required'),
       id: Yup.string()
@@ -130,13 +130,13 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
     
   return (
     <>
-    <title>Register to become Core Member of NSCC KIET | Technical Club Of KIET</title>
+    <title>Register to become Member of NSCC KIET | Technical Club Of KIET</title>
     
-    <div className='max-w-screen-sm mx-auto my-10'>
+    <div className='max-w-screen-sm mx-auto my-5'>
     <h2 className="max-w-lg  mx-3 mb-6 font-sans text-3xl  font-bold leading-none tracking-tight text-gray-900 sm:text-4xl ">
             <span className="relative inline-block">
             
-              <span className="relative">JOIN OUR <span className='text-blue-700'>CORE TEAM</span> </span>
+              <span className="relative">JOIN <span className='text-blue-700'>NSCC KIET</span> </span>
             </span>{' '}
             
           </h2>
@@ -168,7 +168,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1">Form Submission Status</ModalHeader>
               <ModalBody>
                 {formSubmitted?<CircularProgress size="lg" aria-label="Loading..." label="Submitting Form"/>:<><CircularProgress
       label="SuccesFully Submitted"
