@@ -98,7 +98,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
         <InputTextArea className="mt-4" value="feedbackMessage" label="Please provide the feedback" placeHolder="" formikTouched={formik.touched.feedbackMessage} formikError={formik.errors.feedbackMessage} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.feedbackMessage} type="text" />    
        
 
-        <Button color='primary' type='submit'>Register</Button>
+        <Button color='primary' type='submit'>Submit</Button>
 
 
 
@@ -107,7 +107,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">Bootcamp Registration Status</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1">Feedback Status</ModalHeader>
               <ModalBody>
                 {!formSubmitted?<CircularProgress size="lg" aria-label="Loading..." label="Submitting Form"/>:<><CircularProgress
       label="SuccesFully Submitted"
