@@ -107,6 +107,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
         { label: 'ECE', value: 'ece' },
         { label: 'ME', value: 'me' },
         { label: 'EEE', value: 'eee' },
+        { label: 'MCA', value: 'mca' },
       ];
       const domainOptions = [
         { label: 'AI / ML', value: 'aiml' },
