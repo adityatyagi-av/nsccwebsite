@@ -11,6 +11,7 @@ import InputSelect from '@/components/inputSelect';
 
 import InputTextArea from '@/components/inputTextArea';
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 const page = () => {
   const router=useRouter();
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -96,6 +97,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
         { label: 'Hosteller', value: 'hosteller' }
       ];
       const branchOptions = [
+        { label: 'Select Option', value: 'none' },
         { label: 'CSE', value: 'cse' },
         { label: 'CS', value: 'cs' },
         { label: 'IT', value: 'it' },
@@ -138,13 +140,14 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
             
               <span className="relative">JOIN <span className='text-blue-700'>NSCC KIET</span> </span>
             </span>{' '}
-            
+            <p className="text-sm font-medium">This form is for first year students only.</p>
           </h2>
+          
       <form onSubmit={formik.handleSubmit} className='mx-2'>
       
         <Input className="mt-4" value="name" label="Enter your Name" placeHolder="Aditya Tyagi" formikTouched={formik.touched.name} formikError={formik.errors.name} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.name} type="text" />
       
-        <Input value="email" label="Your Email" placeHolder="adityatyagi@gmail.com" formikTouched={formik.touched.email} formikError={formik.errors.email} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.email} type="email"/>
+        <Input value="email" label="Your Email" placeHolder="varshneydev854@gmail.com" formikTouched={formik.touched.email} formikError={formik.errors.email} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.email} type="email"/>
 
         <Input className="mt-4" value="id" label="Enter your ID" placeHolder="2125cs1001" formikTouched={formik.touched.id} formikError={formik.errors.id} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.id} type="text" />
     
@@ -157,7 +160,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
 
         <InputRadio value="residence" label="Day Scholar or Hosteller" options={residenceOptions} formikTouched={formik.touched.residence} formikError={formik.errors.residence} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
         
-        <InputSelect value="domain" label="Select your Domain" options={domainOptions} formikTouched={formik.touched.branch} formikError={formik.errors.domain} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+        <InputSelect value="domain" label="Interested Domain" options={domainOptions} formikTouched={formik.touched.branch} formikError={formik.errors.domain} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
        
         <Button color='primary' type='submit' >Register</Button>
 
