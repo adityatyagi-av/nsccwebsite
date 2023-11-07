@@ -1,4 +1,4 @@
-import Link from 'next/link'
+
 import React from 'react'
 
 const page = () => {
@@ -8,12 +8,18 @@ const page = () => {
       <h2 className=" mx-auto max-w-screen-xl items-center text-center mb-6 font-sans text-3xl  font-bold leading-none tracking-tight text-gray-900 sm:text-4xl ">
             <span className="relative inline-block">
             
-              <span className="relative">FORM<span className='text-blue-700'> SUCCESFULLY </span>SUBMITTED</span>
+              <span className="relative">FORM<span className=''> SUCCESFULLY </span>SUBMITTED</span>
             </span>{' '}
             <br />
-            <Link href="/" className='underline text-blue-800 text-2xl py-20 italic' >Redirect to Home</Link>
+            <br />
+           <span className='text-blue-600'>Round 1 and Round 2 details would be sent through mail. </span>
           </h2>
-    </div>
+
+          <div className='ml-[15vw] mr-[15vw] md:ml-[30%] md:mr-[30%]  lg:ml-[31vw] justify-center'>
+          <a target='_blank' href="https://chat.whatsapp.com/DsQfZvSFUiC5izXf6owWGE" className='bg-green-400 border rounded-lg flex items-center justify-center gap-2 max-w-[20rem] max-h-20 h-16 text-2xl my-10 italic' ><img width={40} height={40} alt='' src="/whatsapp.svg"/><p>Join Community</p></a>
+   
+          </div>
+           </div>
   )
 }
 

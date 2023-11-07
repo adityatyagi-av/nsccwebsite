@@ -12,7 +12,7 @@ const page = () => {
             </span>{' '}
             <br />
             <br />
-           <span className='text-blue-600'>Confirmation and further details would be sent through mail. </span>
+           <span className='text-blue-600'>Round 1 and Round 2 details would be sent through mail. </span>
           </h2>
 
           <div className='ml-[15vw] mr-[15vw] md:ml-[30%] md:mr-[30%] justify-center'>

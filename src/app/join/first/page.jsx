@@ -32,8 +32,8 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
           gender: Yup.string().required('Required'),
           branch: Yup.string().required('Required'),  
           residence: Yup.string().required('Required'),  
-          domain: Yup.string().required('Required'),
-         
+          domain1: Yup.string().required('Required'),
+          domain2: Yup.string().required('Required'),
       });
       const formik = useFormik({
         initialValues: {
@@ -44,8 +44,8 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
           gender:'',
           branch:'',
           residence:'',
-          domain:'',
-          
+          domain1:'',
+          domain2:'',
           
         },
         validationSchema: validationSchema,
@@ -54,7 +54,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
           try {
             
             const { data, error } = await supabase
-              .from('coreteamthirdyear') 
+              .from('firstyear') 
               .insert([
                 {
                   name: values.name,
@@ -64,8 +64,8 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
                   gender: values.gender,
                   branch: values.branch,
                   residence: values.residence,
-                  domain: values.domain,
-                  
+                  domain1: values.domain1,
+                  domain2: values.domain2,
                 },
               ]);
         
@@ -160,7 +160,8 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
 
         <InputRadio value="residence" label="Day Scholar or Hosteller" options={residenceOptions} formikTouched={formik.touched.residence} formikError={formik.errors.residence} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
         
-        <InputSelect value="domain" label="Interested Domain" options={domainOptions} formikTouched={formik.touched.branch} formikError={formik.errors.domain} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+        <InputSelect value="domain1" label="Interested Domain Choice 1" options={domainOptions} formikTouched={formik.touched.domain1} formikError={formik.errors.domain1} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+        <InputSelect value="domain2" label="Interested Domain Choice 2" options={domainOptions} formikTouched={formik.touched.domain2} formikError={formik.errors.domain2} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
        
         <Button color='primary' type='submit' >Register</Button>
 
