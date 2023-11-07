@@ -54,7 +54,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
           try {
             
             const { data, error } = await supabase
-              .from('firstyear') 
+              .from('firstyearform') 
               .insert([
                 {
                   name: values.name,
