@@ -33,7 +33,9 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
           branch: Yup.string().required('Required'),  
           residence: Yup.string().required('Required'),  
           domain: Yup.string().required('Required'),
-         
+          linkedin: Yup.string().required('Required'),
+          github: Yup.string().required('Required'),
+          link: Yup.string().required('Required'),
       });
       const formik = useFormik({
         initialValues: {
@@ -45,7 +47,9 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
           branch:'',
           residence:'',
           domain:'',
-          
+          linkedin:'',
+          github:'',
+          link:'',
           
         },
         validationSchema: validationSchema,
@@ -65,7 +69,9 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
                   branch: values.branch,
                   residence: values.residence,
                   domain: values.domain,
-                  
+                  linkedin: values.linkedin,
+                  github:values.github,
+                  link:values.link
                 },
               ]);
         
@@ -161,6 +167,16 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
         <InputRadio value="residence" label="Day Scholar or Hosteller" options={residenceOptions} formikTouched={formik.touched.residence} formikError={formik.errors.residence} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
         
         <InputSelect value="domain" label="Choose your Domain" options={domainOptions} formikTouched={formik.touched.branch} formikError={formik.errors.domain} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+
+        
+        <Input value="linkedin" label="Linkedin Url" placeHolder="www.linkedin.com/in/varshneydev27/" formikTouched={formik.touched.linkedin} formikError={formik.errors.linkedin} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.linkedin} type="text"/>
+
+        
+        <Input value="github" label="Github Username" placeHolder="adityatyagi-av" formikTouched={formik.touched.github} formikError={formik.errors.github} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.github} type="text"/>
+
+        
+        <Input value="link" label="Any other link you want to share" placeHolder="https://leetcode.com/Devvarshney/" formikTouched={formik.touched.link} formikError={formik.errors.link} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.link} type="text"/>
+
        
         <Button color='primary' type='submit' >Register</Button>
 
