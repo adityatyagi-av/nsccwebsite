@@ -60,8 +60,8 @@ const toggleMenu = () => {
     },
     {
       "id":8,
-      "link":"/bootcamp",
-      "name":"Register"
+      "link":"/join",
+      "name":"JOIN"
     },
 
   ];
@@ -122,8 +122,8 @@ const toggleMenu = () => {
       <NavbarContent justify="end">
         
         <NavbarItem>
-          <Button as={Link} color="primary" href="/bootcamp" variant="flat">
-            Register
+          <Button as={Link} color="primary" href="/join" variant="flat">
+            JOIN
           </Button>
         </NavbarItem>
       </NavbarContent>

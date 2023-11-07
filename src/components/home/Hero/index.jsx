@@ -2,9 +2,11 @@
 
 
 import PlayerAnimation from '@/components/player';
+import { useRouter } from 'next/navigation'
 import { TypeAnimation } from 'react-type-animation';
  
 const Hero = () => {
+    const router = useRouter()
   return (
     <main className="container max-w-screen-xl px-6 py-10 mx-auto">
         <main className="items-center lg:flex">
@@ -40,7 +42,7 @@ const Hero = () => {
 
                             </h2>
                     
-                    <button className="w-full px-5 py-2 mt-6  text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">View Projects</button>
+                    <button className="w-full px-5 py-2 mt-6  text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500" onClick={() => router.push('/join')}>JOIN NSCC</button>
                 </main>
             </main>
 

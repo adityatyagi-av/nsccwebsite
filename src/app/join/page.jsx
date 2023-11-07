@@ -2,17 +2,19 @@
 import CardBox from "@/components/card"
 import Link from "next/link"
 
-const Resources=[
+const Registration=[
   
   {
     id:1,
     playerLink:'https://lottie.host/4dd33555-6a1f-4f2c-bd61-4ee50e340dba/nHkggk8JnZ.json',
-    link:'join/first'
+    link:'join/first',
+    text:'First Year Click Here'
   },
   {
     id:2,
     playerLink:'https://lottie.host/4a7ba51d-cf35-4248-b63f-08317023873f/Quryv1f3au.json',
-    link:'join/second'
+    link:'join/second',
+    text:'Second Year Click Here'
   },
  
 
@@ -38,10 +40,12 @@ const Page = () => {
 
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4"> 
         {
-          Resources.map((resource)=>{
+          Registration.map((year)=>{
             return(
-              <Link key={resource.id} href={resource.link}>
-        <CardBox link={resource.playerLink}/>
+                
+              <Link key={year.id} href={year.link}>
+        <CardBox link={year.playerLink}/>
+        <h1 className="text-xl mt-1 font-semibold text-center text-blue-800 capitalize dark:text-white">{year.text}</h1>
         </Link>
             )
           })
