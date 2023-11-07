@@ -8,13 +8,13 @@ const Registration=[
     id:1,
     playerLink:'https://lottie.host/4dd33555-6a1f-4f2c-bd61-4ee50e340dba/nHkggk8JnZ.json',
     link:'join/first',
-    text:'First Year Click Here'
+    text:'First Year'
   },
   {
     id:2,
     playerLink:'https://lottie.host/4a7ba51d-cf35-4248-b63f-08317023873f/Quryv1f3au.json',
     link:'join/second',
-    text:'Second Year Click Here'
+    text:'Second Year'
   },
  
 
@@ -45,7 +45,7 @@ const Page = () => {
                 
               <Link key={year.id} href={year.link}>
         <CardBox link={year.playerLink}/>
-        <h1 className="text-xl mt-1 font-semibold text-center text-blue-800 capitalize dark:text-white">{year.text}</h1>
+        <h1 className="text-xl mt-1 font-semibold text-center text-blue-800 capitalize dark:text-white">Click Here <br />{`(${year.text})`}</h1>
         </Link>
             )
           })
