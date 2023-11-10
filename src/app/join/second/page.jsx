@@ -115,10 +115,12 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
         { label: 'EEE', value: 'eee' },
       ];
       const domainOptions = [
+        
         { label: 'AI / ML', value: 'aiml' },
         { label: 'Android Development', value: 'android' },
         { label: 'AR / VR', value: 'arvr' },
         { label: 'Cloud Computing', value: 'cloud' },
+        { label: 'DSA', value: 'dsa' },
         { label: 'Devops', value: 'devops' },
         { label: 'Graphic Designing', value: 'graphics' },
         { label: 'UI / UX', value: 'uiux' },
