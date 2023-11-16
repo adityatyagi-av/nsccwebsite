@@ -76,8 +76,8 @@ export default function TestPage() {
       if (selectedLibrary && selectedLibrary.score === null){
         console.log(selectedLibrary)
         // alert(JSON.stringify(values, null, 2));
-        router.prefetch(`testdemo/${selectedId}`)
-        router.push(`testdemo/${selectedId}`)
+        router.prefetch(`slot9/${selectedId}`)
+        router.push(`slot9/${selectedId}`)
         
       }
       else{
@@ -160,6 +160,24 @@ export default function TestPage() {
             </div>
            
           
+
+<ul class=" space-y-1 text-gray-500 my-4 list-disc list-inside dark:text-gray-400">
+    <li>
+    The test window will be 20 minutes. After 20 minutes the test will submit automatically.
+    </li>
+    <li>
+    Once the test is started you cannot pause it, so you have to complete the test in one sitting.
+    </li>
+    <li>
+    The test will be active for 2 hours: 7:30 pm to 9:30 pm. Kindly choose an appropriate time window from these 2 hours.
+    </li>
+    <li>
+    Kindly note your slot number, you can only give the test in the assigned slot. 
+    </li>
+    <li>
+    Avoid use of any unfair means and give the test with honesty. If a candidate is found to be using unfair means, he/she shall be immediately disqualified.
+    </li>
+</ul>
 
 
 

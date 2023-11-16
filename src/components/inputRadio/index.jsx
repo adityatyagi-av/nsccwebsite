@@ -3,7 +3,7 @@ import React from 'react'
 const InputRadio = ({value,label,options,formikTouched,formikError,formikChange,formikBlur}) => {
   
   return (
-    <div className="my-3 ">
+    <div className="my-4 ">
 
           <label htmlFor={value} className="block mb-2 text-sm font-medium text-gray-900 ">{label} {formikTouched && formikError ? (
           <span className=' text-xs text-red-500 mb-.5'>{`(${formikError}*)`}</span>

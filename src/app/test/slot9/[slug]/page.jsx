@@ -21,6 +21,20 @@ const page = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
   const router =useRouter();
+  const [remainingTime, setRemainingTime] = useState(20 * 60); // Initial time in seconds (20 minutes)
+
+  const updateRemainingTime = () => {
+    setRemainingTime((prevTime) => {
+      if (prevTime > 0) {
+        return prevTime - 1;
+      } else {
+        // Call your submission function when the timer reaches 0
+        formik.handleSubmit();
+        return 0;
+      }
+    });
+  };
+
 
 
   useEffect(() => {
@@ -52,7 +66,11 @@ const page = () => {
     if (libraryid) {
       fetchLibraryDetails();
     }
-  }, [libraryid]);
+    const timer = setInterval(updateRemainingTime, 1000); // Update every second
+
+    // Clear the timer if the component unmounts or the form is submitted manually
+    return () => clearInterval(timer);
+  }, []);
 
 
 
@@ -167,6 +185,10 @@ const page = () => {
         <div className='flex gap-4 py-2'>
           <h4 className='text-md text-gray-700 '>Name: <span className='text-blue-700'>{idDetails.name}</span></h4>
           <h4> Library ID: <span className='text-blue-700'>{idDetails.id}</span></h4>
+          <h4 className="text-md  text-gray-700">
+              Time remaining: <span className='text-blue-700'>{Math.floor(remainingTime / 60)}:{(remainingTime % 60).toString().padStart(2, '0')}
+              </span>
+            </h4>
           </div>
           <form onSubmit={formik.handleSubmit}>
 
