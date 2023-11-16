@@ -1,7 +1,7 @@
 const question1=[
-    { label: '15 day', value: 1 },
-    { label: '22 day', value: 0 },
-    { label: '20 day', value: 0 },
+    { label: '24', value: 1 },
+    { label: '12', value: 0 },
+    { label: '20', value: 0 },
     { label: '25', value: 0 },
 ]
 const question2=[
@@ -11,10 +11,10 @@ const question2=[
     { label: 'U', value: 0 },
 ]
 const question3=[
-    { label: '153600', value: 1 },
-    { label: '150000', value: 0 },
-    { label: '200000', value: 0 },
-    { label: '216000', value: 0 },
+    { label: '260', value: 0 },
+    { label: '300', value: 0 },
+    { label: '360', value: 0 },
+    { label: '252', value: 1 },
 ]
 const question4=[
     { label: '2,2,6', value: 0 },
@@ -23,10 +23,10 @@ const question4=[
     { label: '4,4,8', value: 0 },
 ]
 const question5=[
-    { label: '20cm', value: 0 },
-    { label: '18cm', value: 1 },
-    { label: '14cm', value: 0 },
-    { label: '22cm', value: 0 },
+    { label: '52', value: 0 },
+    { label: '42', value: 0 },
+    { label: '60', value: 1 },
+    { label: '55', value: 0 },
 ]
 const question6=[
     { label: '3', value: 0 },
@@ -38,10 +38,10 @@ const question6=[
 
 
 const question7=[
-    { label: '4m', value: 0 },
-    { label: '5m', value: 0 },
-    { label: '8m', value: 0 },
-    { label: '3m', value: 1 },
+    { label: '4', value: 0 },
+    { label: '5', value: 0 },
+    { label: '3', value: 0 },
+    { label: '6', value: 1 },
 ]
 
 const question8=[
@@ -52,10 +52,10 @@ const question8=[
 ]
 
 const question9=[
-    { label: '234', value: 0 },
-    { label: '322', value: 1 },
-    { label: '396', value: 0 },
-    { label: '282', value: 0 },
+    { label: '7', value: 0 },
+    { label: '8', value: 0 },
+    { label: '15', value: 0 },
+    { label: '10', value: 1 },
 ]
 
 const question10=[
@@ -66,10 +66,10 @@ const question10=[
 ]
 
 const question11=[
-    { label: '4', value: 1 },
-    { label: '6', value: 0 },
-    { label: '3', value: 0},
-    { label: '2', value: 0 },
+    { label: 'GRR', value: 0 },
+    { label: 'GSS', value: 0 },
+    { label: 'ISS', value: 1 },
+    { label: 'ITT', value: 0 },
 ]
 
 
@@ -82,9 +82,9 @@ const question12=[
 
 
 const question13=[
-    { label: '352', value: 0 },
-    { label: '380', value: 0 },
-    { label: '364', value: 1 },
+    { label: '120', value: 0 },
+    { label: '240', value: 1 },
+    { label: '300', value: 0 },
     { label: 'none of them', value: 0 },
 ]
 
@@ -97,10 +97,10 @@ const question14=[
 ]
 
 const question15=[
-    { label: '0.18', value: 1 },
-    { label: '0.16', value: 0 },
-    { label: '0.20', value: 0 },
-    { label: '0.12', value: 0 },
+    { label: '(1/3)', value: 0 },
+    { label: '1/(8)', value: 1 },
+    { label: '2/(8)', value: 0 },
+    { label: '1/16', value: 0 },
 ]
 
 
@@ -112,10 +112,10 @@ const question16=[
 ]
 
 const question17=[
-    { label: '85', value: 1 },
-    { label: '75', value: 0 },
-    { label: '65', value: 0 },
-    { label: '95', value: 0 },
+    { label: '14', value: 1 },
+    { label: '12', value: 0 },
+    { label: '13', value: 0 },
+    { label: '16', value: 0 },
 ]
 
 const question18=[
@@ -125,10 +125,8 @@ const question18=[
 ]
 
 const question19=[
-    { label: '20 years', value: 1 },
-    { label: '16 years', value: 0 },
-    { label: '18 years', value: 0 },
-    { label: '22 years', value: 0 },
+    { label: 'true', value: 1 },
+    { label: 'false', value: 0 },
     
 ]
 
