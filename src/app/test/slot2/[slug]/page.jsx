@@ -22,15 +22,7 @@ const page = () => {
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
   const router =useRouter();
   const [remainingTime, setRemainingTime] = useState(20 * 60); // Initial time in seconds (20 minutes)
-  const [allowLeave, setAllowLeave] = useState(false); 
-  const handleVisibilityChange = () => {
-    // Check if the document is hidden (user switched to another tab)
-    if (document.hidden && !formSubmitted && !allowLeave) {
-      alert("You can't switch tabs until you submit the test.");
-      // Uncomment the next line if you want to prevent switching tabs entirely
-      // document.visibilityState = 'visible';
-    }
-  };
+
   const updateRemainingTime = () => {
     setRemainingTime((prevTime) => {
       if (prevTime > 0) {
@@ -74,39 +66,12 @@ const page = () => {
     if (libraryid) {
       fetchLibraryDetails();
     }
-    const handleBeforeUnload = (event) => {
-      // Prompt user if they try to close the tab before submitting
-      if (!formSubmitted && !allowLeave) {
-        const message = "You have unsaved changes. Are you sure you want to leave?";
-        event.returnValue = message;
-        return message;
-      }
-    };
     const timer = setInterval(updateRemainingTime, 1000); // Update every second
 
-    window.addEventListener('beforeunload', handleBeforeUnload);
-    document.addEventListener('visibilitychange', handleVisibilityChange);
+    // Clear the timer if the component unmounts or the form is submitted manually
+    return () => clearInterval(timer);
+  }, []);
 
-    return () => {
-      window.removeEventListener('beforeunload', handleBeforeUnload);
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-    };
-    
-  
-   
-
-   
-  }, [formSubmitted, allowLeave]);
-  const handleBeforeUnload = (event) => {
-    // Show a confirmation message if the user tries to leave the page
-    if (!allowLeave) {
-      const message = "Are you sure you want to leave? Your test progress will be lost.";
-      // Standard for most browsers
-      event.returnValue = message;
-      // For some older browsers
-      return message;
-    }
-  };
 
 
   const validationSchema = Yup.object({
@@ -197,7 +162,6 @@ const page = () => {
         } else {
           console.log('Score updated successfully:', data);
           setFormSubmitted(true)
-          setAllowLeave(true);
           router.push('/succesfull')
           // Redirect or perform any other actions after successful update
         }
@@ -228,11 +192,11 @@ const page = () => {
           </div>
           <form onSubmit={formik.handleSubmit}>
 
-          <InputRadio value="ques1" label="Q.1: A, B and C can do a piece of work in 20, 30 and 60 days respectively. In how many days can A do the work if he is assisted by B and C on every third day?" options={question1} formikTouched={formik.touched.ques1} formikError={formik.errors.ques1} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques1" label="Q.1: How many different ways are there to write the letters in the word KIET?" options={question1} formikTouched={formik.touched.ques1} formikError={formik.errors.ques1} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
           
           <InputRadio value="ques2" label="Q.2: Seated in a line facing westward are P, Q, R, S, and T. P and Q have a seat together. Sitting at the north end is S, and R at the south end. Q and R have a neighbor named T. In the middle, who is seated?" options={question2} formikTouched={formik.touched.ques2} formikError={formik.errors.ques2} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
-          <InputRadio value="ques3" label="Q.3: A, B and C can do a piece of work in 20, 30 and 60 days respectively. In how many days can A do the work if he is assisted by B and C on every third day?" options={question3} formikTouched={formik.touched.ques3} formikError={formik.errors.ques3} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques3" label="Q.3: 2 , 12 , 36 , 80 , 150 , ?" options={question3} formikTouched={formik.touched.ques3} formikError={formik.errors.ques3} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
           <InputRadio value="ques4" label="Q.4: Three daughters belong to Dev's family. The age of his girls is a question his friend Aditya wants to know. He receives a tip from Dev at first, and more hints from her till he guesses their age.
 First hint: their ages added together equals 72.
@@ -243,25 +207,25 @@ Aditya can make a prediction following
 the third indication. What's the age difference between the three daughters?
 " options={question4} formikTouched={formik.touched.ques4} formikError={formik.errors.ques4} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
-          <InputRadio value="ques5" label="Q.5: A rectangle's perimeter and breadth are divided into five equal parts. What is the length of the rectangle if its area is 216 square centimeters?" options={question5} formikTouched={formik.touched.ques5} formikError={formik.errors.ques5} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques5" label="Q.5: Two trains are on same track and they are coming toward each other. The speed of the first train is 50 km/h and the speed of the second train is 70 km/h. A mosquito starts flying between the trains when the distance between two trains is 100 km. The mosquito first flies from first train to second train. Once it reaches the second train, it immediately flies back to the first train … and so on until trains collide. Calculate the total distance travelled by the mosquito. Speed of mosquito is 80 km/h" options={question5} formikTouched={formik.touched.ques5} formikError={formik.errors.ques5} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
           <InputRadio value="ques6" label="Q.6: Someone works for you for five days, and you have an iron bar to pay them. You must give them an iron piece each day. To get one fifth of his daily income, how many minimum cuts to the iron bar do you have to make? " options={question6} formikTouched={formik.touched.ques6} formikError={formik.errors.ques6} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
-          <InputRadio value="ques7" label="Q.7: Two concrete intersections span the length of this 60 m by 40 m rectangular park, with the remaining space being used as a grass. What is the width of the road if the lawn has an area of 2109 square meters?" options={question7} formikTouched={formik.touched.ques7} formikError={formik.errors.ques7} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques7" label="Q.7: There is pizza that has been evenly sliced so that everyone of the 11 Indian players has a slice. return the bare minimum of cuts that are needed?" options={question7} formikTouched={formik.touched.ques7} formikError={formik.errors.ques7} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
 
           <InputRadio value="ques8" label="Q.8: You work as a pizza vendor. A boy gives you a note for 1000 rupees after buying you a pizza for 300. Since you are out of change, you borrow some from the nearby store and give it back to the boy. A few days later, the nearby store owner discovers that the note you gave him was phony and returns the money. How much of a loss must you suffer?
 " options={question8} formikTouched={formik.touched.ques8} formikError={formik.errors.ques8} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
-          <InputRadio value="ques9" label="Q.9: The H.C.F. of two numbers is 23 and the other two factors of their L.C.M. are 13 and 14. The larger of the two numbers is:" options={question9} formikTouched={formik.touched.ques9} formikError={formik.errors.ques9} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques9" label="Q.9: How many hugs in total are there if five lads are in a room and they each give each other a single, brief hug?" options={question9} formikTouched={formik.touched.ques9} formikError={formik.errors.ques9} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
           <InputRadio value="ques10" label="Q.10: Instead of using 12 divisions, the conventional clock now uses 16. Using the hour hand needle at eight and the minute hand needle at twelve, determine the standard time." options={question10} formikTouched={formik.touched.ques10} formikError={formik.errors.ques10} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
-          <InputRadio value="ques11" label="Q.11: Let N be the greatest number that will divide 1305, 4665 and 6905, leaving the same remainder in each case. Then sum of the digits in N is:" options={question11} formikTouched={formik.touched.ques11} formikError={formik.errors.ques11} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques11" label="Q.11: CMM, EOO, GQQ, _____, KUU" options={question11} formikTouched={formik.touched.ques11} formikError={formik.errors.ques11} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
           <InputRadio value="ques12" label="Q.12: ELFA, GLHA, ILJA, _____, MLNA" options={question12} formikTouched={formik.touched.ques12} formikError={formik.errors.ques12} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
   
-          <InputRadio value="ques13" label="Q.13: The least multiple of 7, which leaves a remainder of 4, when divided by 6, 9, 15 and 18 is:" options={question13} formikTouched={formik.touched.ques13} formikError={formik.errors.ques13} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques13" label="Q.13: In 36 seconds, a train passes a station platform; in 20 seconds, a guy is standing there. What is the platform's length if the train is traveling at 54 km/h?" options={question13} formikTouched={formik.touched.ques13} formikError={formik.errors.ques13} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
   
           <InputRadio value="ques14" label="Q.14: A man standing on the platform is crossed by two trains traveling in opposing directions in 27 and 17 seconds, respectively, and they cross each other in 23 seconds. Their speed ratio is as follows:" options={question14} formikTouched={formik.touched.ques14} formikError={formik.errors.ques14} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
   
