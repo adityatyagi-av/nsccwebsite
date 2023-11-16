@@ -4,7 +4,7 @@ import { createClient } from '@supabase/supabase-js';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { Button } from '@nextui-org/react';
-
+import {Spinner} from "@nextui-org/react";
 import InputSelect2 from '@/components/inputSelect2';
 import { useRouter } from 'next/navigation';
 
@@ -17,6 +17,7 @@ export default function TestPage() {
   const router=useRouter();
   const [activeStep, setActiveStep] = useState(0);
   const [list,setList]=useState([])
+  const [loading, setLoading] = useState(true);
  //fetching data using useEffect
   useEffect(()=>{
     const fetchLibraryData = async () => {
@@ -30,7 +31,7 @@ export default function TestPage() {
           console.error('Error fetching library data:', error.message);
         } else {
           setList(data || []);
-          
+          setLoading(false)
         }
       } catch (error) {
         console.error('Error fetching library data:', error.message);
@@ -91,7 +92,14 @@ export default function TestPage() {
   
 
   return (
-    <div className='sm:mx-auto ml-6  max-w-screen-md'>
+    <div className='sm:mx-auto ml-6 mt-2  max-w-screen-md'>
+      {loading ? (
+        <div className='flex items-center justify-center'>
+          <Spinner  label="Loading Portal" color="primary" size='lg' labelColor="primary"/>  
+        </div>
+        
+      ) : (
+
       <form onSubmit={formik.handleSubmit}>
         
 
@@ -183,7 +191,7 @@ export default function TestPage() {
 
        
         
-    </form>
+    </form>)}
   </div>
   );
 }
