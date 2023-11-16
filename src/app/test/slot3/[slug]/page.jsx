@@ -22,15 +22,7 @@ const page = () => {
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
   const router =useRouter();
   const [remainingTime, setRemainingTime] = useState(20 * 60); // Initial time in seconds (20 minutes)
-  const [allowLeave, setAllowLeave] = useState(false); 
-  const handleVisibilityChange = () => {
-    // Check if the document is hidden (user switched to another tab)
-    if (document.hidden && !formSubmitted && !allowLeave) {
-      alert("You can't switch tabs until you submit the test.");
-      // Uncomment the next line if you want to prevent switching tabs entirely
-      // document.visibilityState = 'visible';
-    }
-  };
+
   const updateRemainingTime = () => {
     setRemainingTime((prevTime) => {
       if (prevTime > 0) {
@@ -74,39 +66,12 @@ const page = () => {
     if (libraryid) {
       fetchLibraryDetails();
     }
-    const handleBeforeUnload = (event) => {
-      // Prompt user if they try to close the tab before submitting
-      if (!formSubmitted && !allowLeave) {
-        const message = "You have unsaved changes. Are you sure you want to leave?";
-        event.returnValue = message;
-        return message;
-      }
-    };
     const timer = setInterval(updateRemainingTime, 1000); // Update every second
 
-    window.addEventListener('beforeunload', handleBeforeUnload);
-    document.addEventListener('visibilitychange', handleVisibilityChange);
+    // Clear the timer if the component unmounts or the form is submitted manually
+    return () => clearInterval(timer);
+  }, []);
 
-    return () => {
-      window.removeEventListener('beforeunload', handleBeforeUnload);
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-    };
-    
-  
-   
-
-   
-  }, [formSubmitted, allowLeave]);
-  const handleBeforeUnload = (event) => {
-    // Show a confirmation message if the user tries to leave the page
-    if (!allowLeave) {
-      const message = "Are you sure you want to leave? Your test progress will be lost.";
-      // Standard for most browsers
-      event.returnValue = message;
-      // For some older browsers
-      return message;
-    }
-  };
 
 
   const validationSchema = Yup.object({
@@ -197,7 +162,6 @@ const page = () => {
         } else {
           console.log('Score updated successfully:', data);
           setFormSubmitted(true)
-          setAllowLeave(true);
           router.push('/succesfull')
           // Redirect or perform any other actions after successful update
         }
