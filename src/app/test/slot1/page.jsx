@@ -76,8 +76,8 @@ export default function TestPage() {
       if (selectedLibrary && selectedLibrary.score === null){
         console.log(selectedLibrary)
         // alert(JSON.stringify(values, null, 2));
-        router.prefetch(`slot9/${selectedId}`)
-        router.push(`slot9/${selectedId}`)
+        router.prefetch(`slot1/${selectedId}`)
+        router.push(`slot1/${selectedId}`)
         
       }
       else{
