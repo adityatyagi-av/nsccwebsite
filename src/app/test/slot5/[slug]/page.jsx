@@ -192,58 +192,59 @@ const page = () => {
           </div>
           <form onSubmit={formik.handleSubmit}>
 
-          <InputRadio value="ques1" label="Q.1: Three numbers which are co-prime to each other are such that the product of the first two is 551 and that of the last two is 1073. The sum of the three numbers is:" options={question1} formikTouched={formik.touched.ques1} formikError={formik.errors.ques1} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques1" label="Q.1: How many different ways are there to write the letters in the word KIET?" options={question1} formikTouched={formik.touched.ques1} formikError={formik.errors.ques1} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
           
-          <InputRadio value="ques2" label="Q.2: The father is three times older than Ronit, his son. He would be two and a half times Ronit's age after eight years. How many times, after another eight years, would he be Ronit's age?" options={question2} formikTouched={formik.touched.ques2} formikError={formik.errors.ques2} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques2" label="Q.2: Seated in a line facing westward are P, Q, R, S, and T. P and Q have a seat together. Sitting at the north end is S, and R at the south end. Q and R have a neighbor named T. In the middle, who is seated?" options={question2} formikTouched={formik.touched.ques2} formikError={formik.errors.ques2} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
-          <InputRadio value="ques3" label="Q.3: 'I was as old as you are at the moment at the time of your birth,' a father told his son. If the father is currently 38 years old, the son was the following age five years ago:" options={question3} formikTouched={formik.touched.ques3} formikError={formik.errors.ques3} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques3" label="Q.3: 2 , 12 , 36 , 80 , 150 , ?" options={question3} formikTouched={formik.touched.ques3} formikError={formik.errors.ques3} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
-          <InputRadio value="ques4" label="Q.4: Sameer and Anand are currently 5 years old and 4 years old, respectively. In three years, their ages will differ by 11 and 9, respectively. What is the current age in years of Anand?
+          <InputRadio value="ques4" label="Q.4: Three daughters belong to Dev's family. The age of his girls is a question his friend Aditya wants to know. He receives a tip from Dev at first, and more hints from her till he guesses their age.
+First hint: their ages added together equals 72.
+Hint 2: The total of their ages is equal to Dev's house number.
+Third hint: The eldest girl enjoys ice cream.
+Aditya can make a prediction following 
+
+the third indication. What's the age difference between the three daughters?
 " options={question4} formikTouched={formik.touched.ques4} formikError={formik.errors.ques4} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
-          <InputRadio value="ques5" label="Q.5: When Ayesha was born, her mother was 36 years old, and her father was 38 years old. Her brother was born four years younger than Ayesha. How much does her parent's age gap mean?" options={question5} formikTouched={formik.touched.ques5} formikError={formik.errors.ques5} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques5" label="Q.5: Two trains are on same track and they are coming toward each other. The speed of the first train is 50 km/h and the speed of the second train is 70 km/h. A mosquito starts flying between the trains when the distance between two trains is 100 km. The mosquito first flies from first train to second train. Once it reaches the second train, it immediately flies back to the first train … and so on until trains collide. Calculate the total distance travelled by the mosquito. Speed of mosquito is 80 km/h" options={question5} formikTouched={formik.touched.ques5} formikError={formik.errors.ques5} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
-          <InputRadio value="ques6" label="Q.6: Abhay needs two hours longer than Sameer to reach a distance of 30 km. Should Abhay double his speed, he will finish in one hour instead of Sameer's. The pace of Abhay is:" options={question6} formikTouched={formik.touched.ques6} formikError={formik.errors.ques6} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques6" label="Q.6: Someone works for you for five days, and you have an iron bar to pay them. You must give them an iron piece each day. To get one fifth of his daily income, how many minimum cuts to the iron bar do you have to make? " options={question6} formikTouched={formik.touched.ques6} formikError={formik.errors.ques6} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
-          <InputRadio value="ques7" label="Q.7: Robert has estimated that he will arrive at point A at 2:00 PM while riding his bike. If he drives at ten kilometers per hour, he will arrive there at midday if he drives at fifteen. How fast has he have to go to get to A at 1 P.M.?
-" options={question7} formikTouched={formik.touched.ques7} formikError={formik.errors.ques7} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques7" label="Q.7: There is pizza that has been evenly sliced so that everyone of the 11 Indian players has a slice. return the bare minimum of cuts that are needed?" options={question7} formikTouched={formik.touched.ques7} formikError={formik.errors.ques7} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
 
-          <InputRadio value="ques8" label="Q.8: An individual on a trip covers the first 160 km at 64 km/h and the last 160 km at 80 km/h. Over the tour's first 320 kilometers, the average speed is:
+          <InputRadio value="ques8" label="Q.8: You work as a pizza vendor. A boy gives you a note for 1000 rupees after buying you a pizza for 300. Since you are out of change, you borrow some from the nearby store and give it back to the boy. A few days later, the nearby store owner discovers that the note you gave him was phony and returns the money. How much of a loss must you suffer?
 " options={question8} formikTouched={formik.touched.ques8} formikError={formik.errors.ques8} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
-          <InputRadio value="ques9" label="Q.9: Solve the system of equations: (2x + 3y &= 12) and (4x - 2y &= 6)" options={question9} formikTouched={formik.touched.ques9} formikError={formik.errors.ques9} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques9" label="Q.9: How many hugs in total are there if five lads are in a room and they each give each other a single, brief hug?" options={question9} formikTouched={formik.touched.ques9} formikError={formik.errors.ques9} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
-          <InputRadio value="ques10" label="Q.10: A train travels from City A to City B at a speed of 60 km/h and returns at a speed of 75 km/h. If the total travel time is 8 hours, what is the one-way distance between the two cities?" options={question10} formikTouched={formik.touched.ques10} formikError={formik.errors.ques10} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques10" label="Q.10: Instead of using 12 divisions, the conventional clock now uses 16. Using the hour hand needle at eight and the minute hand needle at twelve, determine the standard time." options={question10} formikTouched={formik.touched.ques10} formikError={formik.errors.ques10} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
-          <InputRadio value="ques11" label="Q.11: The sum of three consecutive integers is 72. Find the integers.
-" options={question11} formikTouched={formik.touched.ques11} formikError={formik.errors.ques11} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques11" label="Q.11: CMM, EOO, GQQ, _____, KUU" options={question11} formikTouched={formik.touched.ques11} formikError={formik.errors.ques11} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
-          <InputRadio value="ques12" label="Q.12: Solve the quadratic equation (3x^2 - 7x + 2 = 0).
-" options={question12} formikTouched={formik.touched.ques12} formikError={formik.errors.ques12} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques12" label="Q.12: ELFA, GLHA, ILJA, _____, MLNA" options={question12} formikTouched={formik.touched.ques12} formikError={formik.errors.ques12} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
   
-          <InputRadio value="ques13" label="Q.13:  If the area of a circle is equal to the area of a rectangle, and the radius of the circle is 7 cm, what is the length of the rectangle if its width is 6 cm? (Take ( pi = 22/7))
-" options={question13} formikTouched={formik.touched.ques13} formikError={formik.errors.ques13} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques13" label="Q.13: In 36 seconds, a train passes a station platform; in 20 seconds, a guy is standing there. What is the platform's length if the train is traveling at 54 km/h?" options={question13} formikTouched={formik.touched.ques13} formikError={formik.errors.ques13} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
   
-          <InputRadio value="ques14" label="Q.14: The sum of the squares of two consecutive even integers is 340. Find the integers." options={question14} formikTouched={formik.touched.ques14} formikError={formik.errors.ques14} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques14" label="Q.14: A man standing on the platform is crossed by two trains traveling in opposing directions in 27 and 17 seconds, respectively, and they cross each other in 23 seconds. Their speed ratio is as follows:" options={question14} formikTouched={formik.touched.ques14} formikError={formik.errors.ques14} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
   
-          <InputRadio value="ques15" label="Q.15: If ( log_2 (x) + log_2 (x + 8) = 6 ), what is the value of  x ?" options={question15} formikTouched={formik.touched.ques15} formikError={formik.errors.ques15} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques15" label="Q.15: Examine these series: (1/2), (1/4), 2, 1,... Which number need to appear next?" options={question15} formikTouched={formik.touched.ques15} formikError={formik.errors.ques15} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
   
-          <InputRadio value="ques16" label="Q.16: The product of two numbers is 72, and their sum is 18. Find the numbers.
-" options={question16} formikTouched={formik.touched.ques16} formikError={formik.errors.ques16} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques16" label="Q.16: Examine the following series: 36, 34, 30, 28, 24,... Which number need to appear next?" options={question16} formikTouched={formik.touched.ques16} formikError={formik.errors.ques16} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
   
-          <InputRadio value="ques17" label="Q.17: If \( tanA = 4/3), what is sinA=?
-" options={question17} formikTouched={formik.touched.ques17} formikError={formik.errors.ques17} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques17" label="Q.17: Examine these series: 47, 27, 27, 53, 40, 40, 27... Which number need to appear next?" options={question17} formikTouched={formik.touched.ques17} formikError={formik.errors.ques17} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
   
-          <InputRadio value="ques18" label="Q.18:  The cost price of an article is $800, and it is sold at a loss of 12.5%. What is the selling price?
-
+          <InputRadio value="ques18" label="Q.18: Eric is younger than Tanya.Tanya is younger than Cliff.Cliff is younger than Eric. The third assertion is true if the first two are.
 " options={question18} formikTouched={formik.touched.ques18} formikError={formik.errors.ques18} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
   
-          <InputRadio value="ques19" label="Q.19: Solve for  x  in the equation 2/x+3/(x+1)= 1
+          <InputRadio value="ques19" label="Q.19: Strawberries are less expensive than blueberries.
+Raspberries are more expensive than blueberries.
+Blueberries and strawberries are less expensive than raspberries.
+The third assertion is true if the first two are.
 " options={question19} formikTouched={formik.touched.ques19} formikError={formik.errors.ques19} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
 
-          <InputRadio value="ques20" label="Q.20: The sum of an infinite geometric series is 24, and the common ratio is 1/2. What is the first term of the series?
-" options={question20} formikTouched={formik.touched.ques20} formikError={formik.errors.ques20} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
+          <InputRadio value="ques20" label="Q.20: A can do a task by themselves in six days, while B can accomplish it in eight. A and B agreed to do it for the sum of Rs. 3200. In three days, they finished the task with C's assistance. What amount is due to C?" options={question20} formikTouched={formik.touched.ques20} formikError={formik.errors.ques20} formikChange={formik.handleChange} formikBlur={formik.handleBlur} />
   
 
 
