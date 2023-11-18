@@ -41,7 +41,7 @@ const page = () => {
     const fetchLibraryDetails = async () => {
       try {
         const { data, error } = await supabase
-          .from('slot9')
+          .from('slot11')
           .select('*')
           .eq('id', libraryid)
           .single();
@@ -153,7 +153,7 @@ const page = () => {
   
       try {
         const { data, error } = await supabase
-          .from('slot9')
+          .from('slot11')
           .update({ score: totalScore })
           .eq('id', libraryid);
   
