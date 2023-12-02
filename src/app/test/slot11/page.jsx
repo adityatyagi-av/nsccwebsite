@@ -24,7 +24,7 @@ export default function TestPage() {
       try {
       
         const { data, error } = await supabase
-          .from('slot11')
+          .from('slot1')
           .select('id,score,name'); 
 
         if (error) {
@@ -76,8 +76,8 @@ export default function TestPage() {
       if (selectedLibrary && selectedLibrary.score === null){
         console.log(selectedLibrary)
         // alert(JSON.stringify(values, null, 2));
-        router.prefetch(`slot11/${selectedId}`)
-        router.push(`slot11/${selectedId}`)
+        router.prefetch(`slot1/${selectedId}`)
+        router.push(`slot1/${selectedId}`)
         
       }
       else{
