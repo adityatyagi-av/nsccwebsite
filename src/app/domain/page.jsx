@@ -137,7 +137,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
     <h2 className="max-w-lg  mx-3 mb-6 font-sans text-3xl  font-bold leading-none tracking-tight text-gray-900 sm:text-4xl ">
             <span className="relative inline-block">
             
-              <span className="relative">Domain Choice<span className='text-blue-700'>Selection</span> </span>
+              <span className="relative">Domain Choice<span className='text-blue-700'> Selection</span> </span>
             </span>{' '}
             
           </h2>
@@ -167,7 +167,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
 
        
 
-        <Button color='primary' type='submit'>Register</Button>
+        <Button color='primary' type='submit'>Submit</Button>
 
 
 
