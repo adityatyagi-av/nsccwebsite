@@ -1,26 +1,26 @@
 "use client"
 import React from "react";
-
+import { useEffect } from "react";
 import { Navbar, 
   NavbarBrand, 
   NavbarContent, 
   NavbarItem, 
   NavbarMenuToggle,
   NavbarMenu,
-  NavbarMenuItem, Button, Link} from "@nextui-org/react";
-
+  NavbarMenuItem, Button,  } from "@nextui-org/react";
+ import Link from "next/link";
 import Image from "next/image.js";
 // import Link from "next/link";
 
-import { useRouter } from 'next/navigation'
+// import { useRouter } from 'next/navigation'
 
 
 export default function App() {
-  const router=useRouter();
+  // const router=useRouter();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle the menu state
-  };
+// const toggleMenu = () => {
+//     setIsMenuOpen(!isMenuOpen); // Toggle the menu state
+//   };
   const menuItems = [
     
     {
@@ -70,12 +70,15 @@ const toggleMenu = () => {
     <Navbar 
     maxWidth="xl"
     onMenuOpenChange={setIsMenuOpen} 
+    isMenuOpen={isMenuOpen}
     className="shadow-md pb-1.5"
     >
     
       <NavbarContent className="flex ">
         <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-label={useEffect(()=>{
+       isMenuOpen ? "Close menu" : "Open menu"
+          },[isMenuOpen])}
           className="sm:hidden"
         />
         <NavbarBrand className="mb-1.5">
@@ -129,21 +132,18 @@ const toggleMenu = () => {
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={item.id} onClick={toggleMenu}>
-            <Link 
-            onClick={()=>{
-              setIsMenuOpen(false)
-              router.push(`${item.link}`)
-            }
-            }
+          <NavbarMenuItem key={item.id} >
+            <Link
+              className="w-full delay-75"
               color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
+                index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
               }
-              className="w-full"
               href={item.link}
               size="lg"
-            >
+              onClick={() => setIsMenuOpen(false)}
+            disableAnimation="false" >
               {item.name}
+            
             </Link>
           </NavbarMenuItem>
         ))}
