@@ -10,9 +10,7 @@ import { Navbar,
   NavbarMenuItem, Button,  } from "@nextui-org/react";
  import Link from "next/link";
 import Image from "next/image.js";
-// import Link from "next/link";
 
-// import { useRouter } from 'next/navigation'
 
 
 export default function App() {
@@ -141,7 +139,7 @@ export default function App() {
               href={item.link}
               size="lg"
               onClick={() => setIsMenuOpen(false)}
-            disableAnimation="false" >
+            disableanimation="false" >
               {item.name}
             
             </Link>
