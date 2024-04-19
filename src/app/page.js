@@ -6,6 +6,7 @@ import CoreTeam from '@/components/home/coreteam'
 import Domains from '@/components/home/domains'
 import Faq from '@/components/home/faq'
 import Projects from '@/components/home/projects'
+import Founder from '@/components/home/founder'
 
 import React from 'react'
 
@@ -18,7 +19,7 @@ const page = () => {
       <Projects/>
       
       <Domains/>
-      
+      <Founder/>
       <CoreTeam/>
       {/* <Faq/> */}
     </main>
