@@ -63,7 +63,7 @@ export default function App() {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="primary" href="/join" variant="flat">
+          <Button as={Link} color="primary" href="https://chat.whatsapp.com/DsQfZvSFUiC5izXf6owWGE" variant="flat">
             JOIN
           </Button>
         </NavbarItem>
