@@ -89,7 +89,7 @@ const Founder = () => {
     return (
         <section className="bg-white mx-auto max-w-screen-xl">
             <div className="container px-6 py-10 mx-auto">
-                <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl "> Core Team
+                <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl ">Founders
                     <div className="flex justify-center mx-auto mt-6">
                         <span className="inline-block w-44 h-1 bg-blue-500 rounded-full"></span>
                         <span className="inline-block w-6 h-1 mx-1 bg-blue-500 rounded-full"></span>
