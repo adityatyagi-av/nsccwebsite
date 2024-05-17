@@ -12,7 +12,7 @@ export const ThirdYear = [
         id: 11,
         name: 'Abhishek Verma',
         role: 'Coordinator',
-        imageUrl: 'https://media.licdn.com/dms/image/D4D35AQFM8flU7yjo9A/profile-framedphoto-shrink_400_400/0/1698499683872?e=1715511600&v=beta&t=r_WwPrE4YSBearVmKKHgpmK5H1ZLYRV2mfjdzmtw-yY',
+        imageUrl: 'https://media.licdn.com/dms/image/D4D35AQFM8flU7yjo9A/profile-framedphoto-shrink_400_400/0/1698499683872?e=1716548400&v=beta&t=ErYWb_zJJEdxKDL3j06g_w3-5fe9rvWA_N8k7Msg6Po',
         description: 'DSA and CP Enthusiast',
         linkedin: 'https://www.linkedin.com/in/abhishek-verma-b39878228/',
         link: ''
@@ -93,7 +93,7 @@ export const ThirdYear = [
         id: 7,
         name: 'Raunak Jain',
         role: 'Coordinator',
-        imageUrl: 'https://media.licdn.com/dms/image/D4D35AQFpQRXOP6mUbw/profile-framedphoto-shrink_400_400/0/1710830805028?e=1715511600&v=beta&t=_JzStBBcUgq77MhvfXVM0UGeBC0gs_jBOdHNIbPFJ6o',
+        imageUrl: 'https://media.licdn.com/dms/image/D4D35AQFpQRXOP6mUbw/profile-framedphoto-shrink_400_400/0/1710830805028?e=1716548400&v=beta&t=rjmDCzHImLhjEsnjsIGTPCc_SOk8-sq5MioZrvbgIDE',
         description: 'MERN Stack Web Developer',
         linkedin: 'https://www.linkedin.com/in/raunak-jain21/',
         link: ''
