@@ -35,8 +35,13 @@ const CoreTeam = () => {
             id: 4,
             name: 'Shreyansh Tiwari',
             position: 'General Secretary',
+<<<<<<< HEAD
             image: 'https://media.licdn.com/dms/image/v2/D4D35AQGru9bxX21t1Q/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1701150695322?e=1726293600&v=beta&t=USYNwIN-GK1W4gyHV1lYMt3e20cJsKxd6orSg6s5mVQ',
              link: 'https://www.linkedin.com/in/shreyansh-tiwari-6b4976250/',
+=======
+            image: 'https://media.licdn.com/dms/image/D4D35AQGru9bxX21t1Q/profile-framedphoto-shrink_400_400/0/1701150695322?e=1716548400&v=beta&t=WbU8UZUh68z129D4KNSY_rKH-9XxlBuUuVAaIO0w__0',
+            link: 'https://www.linkedin.com/in/shreyansh-tiwari-6b4976250/',
+>>>>>>> 20fce46f5caafc1f64fd0ec57e54bdafdafad937
             linkedin: 'https://www.linkedin.com/in/shreyansh-tiwari-6b4976250/',
             github: '',
         },
@@ -44,7 +49,11 @@ const CoreTeam = () => {
             id: 5,
             name: 'Aryan Tiwari',
             position: 'Project Lead',
+<<<<<<< HEAD
             image: 'https://media.licdn.com/dms/image/v2/D5635AQHwu_7AR-RO0Q/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1713915037226?e=1726293600&v=beta&t=M_eyXF5VJENLBSMvi_eWrxurYXAmn_FUdCkWHZEyHY0',
+=======
+            image: 'https://media.licdn.com/dms/image/D5635AQHwu_7AR-RO0Q/profile-framedphoto-shrink_400_400/0/1713915037226?e=1716548400&v=beta&t=V3T4jAwPFIMP8ZsV4PURdtnsjd8V8NOFGQctK7ZmCfw',
+>>>>>>> 20fce46f5caafc1f64fd0ec57e54bdafdafad937
             link: 'https://www.linkedin.com/in/aryantiwari8736/',
             linkedin: 'https://www.linkedin.com/in/aryantiwari8736/',
             github: '',

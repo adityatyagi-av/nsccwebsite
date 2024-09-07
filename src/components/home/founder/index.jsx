@@ -15,7 +15,11 @@ const Founder = () => {
             id: 2,
             name: "Shaurya Awasthi",
             position: 'Ex - Vice President',
+<<<<<<< HEAD
             image: 'https://media.licdn.com/dms/image/v2/D5635AQGSSobr-xv0Kg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1721481413990?e=1726293600&v=beta&t=7qJURVB0APTbOfwdTcsiZREm6xnqrNpFbjMMYnK2tOc',
+=======
+            image: "https://media.licdn.com/dms/image/D5635AQGMaWD_q3jDlg/profile-framedphoto-shrink_400_400/0/1714608760356?e=1716548400&v=beta&t=w6WHl8PsBW4Ss7u_V2FlYOG0kHFmL1Dok2XlNyPYlWo",
+>>>>>>> 20fce46f5caafc1f64fd0ec57e54bdafdafad937
             linkedin: "https://www.linkedin.com/in/shaurya007/",
             link: 'https://shaurya-eportfolio.netlify.app/',
             github: '',
@@ -42,7 +46,11 @@ const Founder = () => {
             id: 5,
             name: 'Shreyansh Tiwari',
             position: 'General Secretary',
+<<<<<<< HEAD
             image: 'https://media.licdn.com/dms/image/v2/D4D35AQGru9bxX21t1Q/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1701150695322?e=1726293600&v=beta&t=USYNwIN-GK1W4gyHV1lYMt3e20cJsKxd6orSg6s5mVQ',
+=======
+            image: 'https://media.licdn.com/dms/image/D4D35AQGru9bxX21t1Q/profile-framedphoto-shrink_400_400/0/1701150695322?e=1716548400&v=beta&t=WbU8UZUh68z129D4KNSY_rKH-9XxlBuUuVAaIO0w__0',
+>>>>>>> 20fce46f5caafc1f64fd0ec57e54bdafdafad937
             link: 'https://www.linkedin.com/in/shreyansh-tiwari-6b4976250/',
             linkedin: 'https://www.linkedin.com/in/shreyansh-tiwari-6b4976250/',
             github: '',
@@ -60,8 +68,13 @@ const Founder = () => {
             id: 7,
             name: 'Sparsh Verma',
             position: 'Ex- Development Head',
+<<<<<<< HEAD
             image: 'https://media.licdn.com/dms/image/v2/D4D35AQFlvcS4mqmlfQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1695830174232?e=1726293600&v=beta&t=OBjF_Ri_4bEjeRKZjGCQ5nd643tAtr9ilH0NuOC0Ooo',
                linkedin: 'https://www.linkedin.com/in/sparshverma094/',
+=======
+            image: 'https://media.licdn.com/dms/image/D4D35AQFlvcS4mqmlfQ/profile-framedphoto-shrink_400_400/0/1695830174232?e=1716548400&v=beta&t=QeLgz8y1L3rCT7s8CX5fvnz2foM14ORkUeloFJQgNKo',
+            linkedin: 'https://www.linkedin.com/in/sparshverma094/',
+>>>>>>> 20fce46f5caafc1f64fd0ec57e54bdafdafad937
             link: '',
             github: ''
         },
@@ -78,8 +91,13 @@ const Founder = () => {
             id: 9,
             name: 'Khushi',
             position: 'Ex- Graphics Head',
+<<<<<<< HEAD
             image: 'https://media.licdn.com/dms/image/v2/D4D35AQG7v7-xwGj7RA/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1698412317828?e=1726293600&v=beta&t=sgv7iyX4X19MPlLG89AVLLYogUMpkJ9hpH1DexkAwGY',
               linkedin: 'https://www.linkedin.com/in/khushi-gupta-624087271/',
+=======
+            image: 'https://media.licdn.com/dms/image/D4D35AQG7v7-xwGj7RA/profile-framedphoto-shrink_400_400/0/1698412317828?e=1716548400&v=beta&t=zDvjltYjsAF8L2EBYokJtFuhW__cd6IOIN3-ByiX3zY',
+            linkedin: 'https://www.linkedin.com/in/khushi-gupta-624087271/',
+>>>>>>> 20fce46f5caafc1f64fd0ec57e54bdafdafad937
             link: '',
             github: ''
         },
