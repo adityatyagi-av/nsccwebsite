@@ -6,7 +6,7 @@ const Founder = () => {
             id: 1,
             name: "Shikha Dixit",
             position: 'Ex - President',
-            image: "https://media.licdn.com/dms/image/D4D03AQETYALwjBgBUA/profile-displayphoto-shrink_800_800/0/1691345596103?e=1718841600&v=beta&t=k7kB8lrN53jwLrqIowDnyquoYF2s2UHFoLyJtLV6N6o",
+            image: 'https://media.licdn.com/dms/image/v2/D5603AQEBt1DF553h3A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719827945491?e=1730937600&v=beta&t=zvkqlQ5ZG7kAvHOL6RlwwH0Nkw7o0P2DlvNgDKPWULY',
             linkedin: "https://www.linkedin.com/in/shixit/",
             link: '',
             github: '',
@@ -15,7 +15,7 @@ const Founder = () => {
             id: 2,
             name: "Shaurya Awasthi",
             position: 'Ex - Vice President',
-            image: "https://media.licdn.com/dms/image/D5635AQGMaWD_q3jDlg/profile-framedphoto-shrink_400_400/0/1714608760356?e=1715511600&v=beta&t=uQYE7H2NUgSg23EezXPwRgH6KWIDv0xqj0eHOeW_8-8",
+            image: 'https://media.licdn.com/dms/image/v2/D5635AQGSSobr-xv0Kg/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1721481413990?e=1726293600&v=beta&t=7qJURVB0APTbOfwdTcsiZREm6xnqrNpFbjMMYnK2tOc',
             linkedin: "https://www.linkedin.com/in/shaurya007/",
             link: 'https://shaurya-eportfolio.netlify.app/',
             github: '',
@@ -24,66 +24,66 @@ const Founder = () => {
             id: 3,
             name: 'Aditya Tyagi',
             position: 'President',
-            image: 'https://media.licdn.com/dms/image/D4D03AQHwILiTLvOAvQ/profile-displayphoto-shrink_400_400/0/1684496714331?e=1720656000&v=beta&t=JDwyJ9yzr1iBhTWaAcppAx4CL3NZEDmAiNkCkhRoPlI',
+            image: 'https://media.licdn.com/dms/image/v2/D4D03AQHwILiTLvOAvQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1684496714331?e=1730937600&v=beta&t=xH2DACxNyDhqgo2k7EdVkelhivAt2wl8N5UVefF4e0A',
             linkedin: 'https://www.linkedin.com/in/adityatyagiav/',
             github: 'https://github.com/adityatyagi-av',
-            link:''
+            link: ''
         },
         {
             id: 4,
             name: 'Dhruv Gajwani',
             position: 'Vice-President',
-            image: 'https://media.licdn.com/dms/image/C5603AQEvS9KSB2Dh_w/profile-displayphoto-shrink_400_400/0/1653045841830?e=1720656000&v=beta&t=z3v2ftxE3hZ2FzApT4CjwOc63rBkSB9AV73CXP9kh-4',
+            image: 'https://media.licdn.com/dms/image/v2/C5603AQEvS9KSB2Dh_w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1653045841830?e=1730937600&v=beta&t=MShqwcGY1cRD_vKR0Wcmyc9OJphNd2InNiGY4puP1RE',
             linkedin: 'https://www.linkedin.com/in/dhruv-gajwani-72346a23b/',
             link: '',
-            github:''
+            github: ''
         },
         {
             id: 5,
             name: 'Shreyansh Tiwari',
             position: 'General Secretary',
-            image: 'https://media.licdn.com/dms/image/D4D35AQGru9bxX21t1Q/profile-framedphoto-shrink_400_400/0/1701150695322?e=1715515200&v=beta&t=X4BrfBUEZg-3vPA5ahjkFiuzDlCknMcni6m3Rbxe668',
+            image: 'https://media.licdn.com/dms/image/v2/D4D35AQGru9bxX21t1Q/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1701150695322?e=1726293600&v=beta&t=USYNwIN-GK1W4gyHV1lYMt3e20cJsKxd6orSg6s5mVQ',
             link: 'https://www.linkedin.com/in/shreyansh-tiwari-6b4976250/',
             linkedin: 'https://www.linkedin.com/in/shreyansh-tiwari-6b4976250/',
             github: '',
         },
-         {
+        {
             id: 6,
             name: 'Nikita Jain',
             position: 'Ex- Technical Head',
-            image: 'https://media.licdn.com/dms/image/D4E03AQGeyzos5CeT_w/profile-displayphoto-shrink_400_400/0/1708519845694?e=1720656000&v=beta&t=KhGtSEcocFIkhSuRhzVf0TfI5NtA_Q6EtaX_3SIJHEs',
+            image: 'https://media.licdn.com/dms/image/v2/D5603AQGCzlmRrk4xzg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719208921092?e=1730937600&v=beta&t=yUt5NST2GIaPdSEB3PmIkwuZV6-tRPrWNU_m1zxxaaU',
             linkedin: 'https://www.linkedin.com/in/nikita-jain-975707213/',
             link: '',
-            github:''
+            github: ''
         },
         {
             id: 7,
             name: 'Sparsh Verma',
             position: 'Ex- Development Head',
-            image: 'https://media.licdn.com/dms/image/D4D35AQFlvcS4mqmlfQ/profile-framedphoto-shrink_400_400/0/1695830174232?e=1715583600&v=beta&t=WsqZ1Zfnppx3LhWVGgauBZthej6wpjjd75LLmXzdkeo',
-            linkedin: 'https://www.linkedin.com/in/sparshverma094/',
+            image: 'https://media.licdn.com/dms/image/v2/D4D35AQFlvcS4mqmlfQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1695830174232?e=1726293600&v=beta&t=OBjF_Ri_4bEjeRKZjGCQ5nd643tAtr9ilH0NuOC0Ooo',
+               linkedin: 'https://www.linkedin.com/in/sparshverma094/',
             link: '',
-            github:''
+            github: ''
         },
-         {
+        {
             id: 8,
             name: 'Paras Tiwari',
             position: 'Ex- CP Head',
-            image: 'https://media.licdn.com/dms/image/D5603AQGK2psKYX3dxA/profile-displayphoto-shrink_400_400/0/1713293012188?e=1720656000&v=beta&t=vsS_z2RCvJHrisNOD_NWbbA-xsiUfc4ibIIVlU6iBXU',
-            linkedin: 'https://www.linkedin.com/in/paras-tiwari-3a78a9212/',
+            image: 'https://media.licdn.com/dms/image/v2/D5603AQGhVLplkeTsFA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724421171342?e=1730937600&v=beta&t=Yw2D44R4zlfICAM47m9F1gWh46pefdWQiidyNHrpt0E',
+             linkedin: 'https://www.linkedin.com/in/paras-tiwari-3a78a9212/',
             link: '',
-            github:''
+            github: ''
         },
-         {
+        {
             id: 9,
             name: 'Khushi',
             position: 'Ex- Graphics Head',
-            image: 'https://media.licdn.com/dms/image/D4D35AQG7v7-xwGj7RA/profile-framedphoto-shrink_400_400/0/1698412317828?e=1715583600&v=beta&t=O9GeQ8e3XfB0y6TX-jsHBPSXuNYk6JvPQkxUUZtIbgk',
-            linkedin: 'https://www.linkedin.com/in/khushi-gupta-624087271/',
+            image: 'https://media.licdn.com/dms/image/v2/D4D35AQG7v7-xwGj7RA/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1698412317828?e=1726293600&v=beta&t=sgv7iyX4X19MPlLG89AVLLYogUMpkJ9hpH1DexkAwGY',
+              linkedin: 'https://www.linkedin.com/in/khushi-gupta-624087271/',
             link: '',
-            github:''
+            github: ''
         },
-         
+
     ];
 
     return (
