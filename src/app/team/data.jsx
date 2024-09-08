@@ -3,7 +3,7 @@ export const ThirdYear = [
         id: 4,
         name: 'Abhinav Chaudhary',
         role: 'Coordinator',
-        imageUrl: "https://media.licdn.com/dms/image/v2/D5603AQGaEqm-sWqzQA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1702752522622?e=1730937600&v=beta&t=m77kjL2YG6EIcNEcQhGuJ3NdRkTJ6TcKwgbCrDW9XFs",
+        imageUrl: "/3rdyear/abhinav.jpeg",
         description: 'UI/UX Designer',
         linkedin: 'https://www.linkedin.com/in/abhinav-chaudhary-62349a22b/',
         link: ''
@@ -12,7 +12,7 @@ export const ThirdYear = [
         id: 11,
         name: 'Abhishek Verma',
         role: 'Coordinator',
-        imageUrl: 'https://media.licdn.com/dms/image/v2/D4D35AQFM8flU7yjo9A/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1698499683872?e=1726326000&v=beta&t=rNLB-dGftKyZyUVbfrPu86tW_nO1QxA1Igp4Nnbyd_s',
+        imageUrl: '/3rdyear/abhishekVerma.jpeg',
         description: 'DSA and CP Enthusiast',
         linkedin: 'https://www.linkedin.com/in/abhishek-verma-b39878228/',
         link: ''
@@ -21,7 +21,7 @@ export const ThirdYear = [
         id: 17,
         name: 'Abhishek Rai',
         role: 'Coordinator',
-        imageUrl: 'https://media.licdn.com/dms/image/v2/D5603AQEkpw-0akz-XQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724387278472?e=1730937600&v=beta&t=zgrL4BxxUptpXMCLk0uTnwTaXKOlqXJgssck0T9kyM8',
+        imageUrl: '/3rdyear/abhishekRai.jpeg',
         description: 'DSA and CP Enthusiast',
         linkedin: 'https://www.linkedin.com/in/abhishek-rai-692397227/',
         link: ''
@@ -30,7 +30,7 @@ export const ThirdYear = [
         id: 1,
         name: 'Aditya Tyagi',
         role: 'Coordinator',
-        imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQHwILiTLvOAvQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1684496714331?e=1730937600&v=beta&t=xH2DACxNyDhqgo2k7EdVkelhivAt2wl8N5UVefF4e0A',
+        imageUrl: '/3rdyear/adityaTyagi.jpeg',
         description: 'MERN STACK WEB DEVELOPER',
         linkedin: 'https://www.linkedin.com/in/adityatyagiav/',
         link: 'https://github.com/adityatyagi-av'
@@ -48,7 +48,7 @@ export const ThirdYear = [
         id: 5,
         name: 'Ayush Chauhan',
         role: 'Coordinator',
-        imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQG-83phbPPI5A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1675856956041?e=1730937600&v=beta&t=NXo3hY-_s0VVZ9YK_SoLPLFepYdjWP-XuqOnm72ACLI',
+        imageUrl: '/3rdyear/ayushChauhan.jpeg',
         description: 'MERN Stack and Blockchain Developer',
         linkedin: 'https://www.linkedin.com/in/ayush-chauhan-bab008249/',
         link: ''
@@ -57,7 +57,7 @@ export const ThirdYear = [
         id: 3,
         name: 'Dev Varshney',
         role: 'Coordinator',
-        imageUrl: 'https://media.licdn.com/dms/image/v2/D5603AQELQ4gEFFj_fg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1716309377490?e=1730937600&v=beta&t=2LXbWw8DAerw4nKjvBX5gQJ8u_tjTDKKoKDF_ci9H5Q',
+        imageUrl: '/3rdyear/devVarshney.jpeg',
         description: 'DSA and CP Enthusiast',
         linkedin: 'https://www.linkedin.com/in/varshneydev27/',
         link: ''
@@ -66,7 +66,7 @@ export const ThirdYear = [
         id: 2,
         name: 'Dhruv Gajwani',
         role: 'Coordinator',
-        imageUrl: 'https://media.licdn.com/dms/image/v2/C5603AQEvS9KSB2Dh_w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1653045841830?e=1730937600&v=beta&t=MShqwcGY1cRD_vKR0Wcmyc9OJphNd2InNiGY4puP1RE',
+        imageUrl: '/3rdyear/dhruv.jpeg',
         description: 'Android Developer and tech enthusiast',
         linkedin: 'https://www.linkedin.com/in/dhruv-gajwani-72346a23b/',
         link: ''
@@ -75,7 +75,7 @@ export const ThirdYear = [
         id: 8,
         name: 'Divyanshi Srivastava',
         role: 'Coordinator',
-        imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQHNNIZZNFwo3w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1696449289069?e=1730937600&v=beta&t=QhBhoacP3MZNlv9k-p4PSkun8sUMLuebyyYBDLU8taU',
+        imageUrl: '/3rdyear/divyanshi.jpeg',
         description: 'Social Media Handler',
         linkedin: 'https://www.linkedin.com/in/divyanshi-srivastava-775925222/',
         link: ''
@@ -84,7 +84,7 @@ export const ThirdYear = [
         id: 15,
         name: 'Keshav Tyagi',
         role: 'Coordinator',
-        imageUrl: 'https://media.licdn.com/dms/image/v2/D4D03AQHzpwkk_o9Vng/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1665625521108?e=1730937600&v=beta&t=TdTwU-v1v2sPrNYrMj8i_dntnAEZ67rzFIM-zRgiCE8',
+        imageUrl: '/3rdyear/keshav.jpeg',
         description: 'App Developer',
         linkedin: 'https://www.linkedin.com/in/keshav-tyagi-55a309236/',
         link: ''
@@ -93,7 +93,7 @@ export const ThirdYear = [
         id: 7,
         name: 'Raunak Jain',
         role: 'Coordinator',
-        imageUrl: 'https://media.licdn.com/dms/image/v2/D4D35AQFpQRXOP6mUbw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1710830805028?e=1726326000&v=beta&t=ySV2tCzPjUX7sEoHUzmfbW73NCGRH8L7Kkr5odmem-U',
+        imageUrl: '/3rdyear/raunak.jpeg',
         description: 'MERN Stack Web Developer',
         linkedin: 'https://www.linkedin.com/in/raunak-jain21/',
         link: ''
@@ -121,7 +121,7 @@ export const ThirdYear = [
         id: 6,
         name: 'Vikas Kumar',
         role: 'Coordinator',
-        imageUrl: 'https://media.licdn.com/dms/image/v2/D5603AQGUqLR_yJsKQQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1710741038564?e=1730937600&v=beta&t=Ihw7hZ2dX51_1We7dhOn3JarKd1-cqyyw3zLXlaTALc',
+        imageUrl: '/3rdyear/vikas.jpeg',
         description: 'AI/ML and AR/VR Lead',
         linkedin: 'https://www.linkedin.com/in/vikaskumar142001/',
         link: ''
@@ -130,7 +130,7 @@ export const ThirdYear = [
         id: 13,
         name: 'Vikas Kumar',
         role: 'Coordinator',
-        imageUrl: 'https://media.licdn.com/dms/image/v2/D4E03AQGEvxN_7A-mXA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1710913580570?e=1730937600&v=beta&t=_Fw3wzIN83WYnjw1UWBgYVdyAw0Gi9qMxb3vx1PKAeM',
+        imageUrl: '/3rdyear/vikasKumar.jpeg',
         description: 'DSA and CP Enthusiast',
         linkedin: 'https://www.linkedin.com/in/vikas-kumar-48429924b/',
         link: ''
@@ -166,7 +166,7 @@ export const SecondYear = [
     {
         id: 3,
         name: "Agam Singh",
-        imageUrl: 'https://media.licdn.com/dms/image/D4D03AQHK9_ycw09RyA/profile-displayphoto-shrink_400_400/0/1675968272073?e=1720656000&v=beta&t=pP_fRQyYOE8m4opBbciwIG9Vordfxcpz6e-0NZpJmDw'
+        imageUrl: '/2ndyear/agam.jpg'
     },
     {
         id: 4,
@@ -256,7 +256,7 @@ export const SecondYear = [
     {
         id: 21,
         name: 'Mukul Agarwal',
-        imageUrl: 'https://media.licdn.com/dms/image/D5603AQH2bvlodCX4_w/profile-displayphoto-shrink_400_400/0/1707995226289?e=1720656000&v=beta&t=rP7-P-OKyaJo88Xy2vP_LZatliGhX6GYw9tLU17JIFs'
+        imageUrl: '/2ndyear/mukul.jpg'
     },
     {
         id: 22,
