@@ -331,7 +331,7 @@ export const SecondYear = [
     {
         id: 36,
         name: 'Simon Srivastava',
-        imageUrl: 'https://media.licdn.com/dms/image/D4D03AQH5u_HuKIIR3g/profile-displayphoto-shrink_400_400/0/1693940497061?e=1720656000&v=beta&t=Rb-bXS9Y5kmfKNyPcsUwfitIGnd6tZipm3f1-ZNvzR8'
+        imageUrl: '/2ndyear/simon.jpeg'
     },
     {
         id: 37,

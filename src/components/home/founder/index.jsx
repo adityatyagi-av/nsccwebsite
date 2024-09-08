@@ -77,7 +77,7 @@ const Founder = () => {
             id: 9,
             name: 'Khushi',
             position: 'Ex- Graphics Head',
-            image: '/founders/KhushiGupta.jpeg',
+            image: '/founders/khushiGupta.jpeg',
             linkedin: 'https://www.linkedin.com/in/khushi-gupta-624087271/',
             link: '',
             github:''
