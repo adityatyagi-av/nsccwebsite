@@ -116,10 +116,63 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
     <h2 className="max-w-lg  mx-3 mb-6 font-sans text-3xl  font-bold leading-none tracking-tight text-gray-900 sm:text-4xl ">
             <span className="relative inline-block">
             
-              <span className="relative">Android Bootcamp Registration <span className='text-blue-700'>Closed</span> </span>
+              <span className="relative"><span className='text-blue-700'>Dev 101</span> Bootcamp Registration</span>
             </span>{' '}
             
           </h2>
+          <div className="flex flex-col lg:flex-row md:flex-row gap-20 justify-center items-center">
+  <div className="content-center justify-center w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <img
+      className="object-cover w-full h-72"
+      src='/bootcamp/androidBootcamp.jpg'
+      alt="avatar"
+    />
+    <div className="py-5 text-center">
+      <a href="https://lu.ma/hxnvasst" target="_blank">
+      <button className="animate-bounce px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+        Join Android Dev Bootcamp
+      </button>
+      </a>
+    </div>
+  </div>
+
+  <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <img
+      className="object-cover w-full h-72"
+      src='/bootcamp/webBootcamp.jpg'
+      alt="avatar"
+    />
+    <div className="py-5 text-center">
+    <a href="https://lu.ma/340obol9" target="_blank">
+      <button className="animate-bounce px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+        Join Web Dev Bootcamp
+      </button>
+      </a>
+    </div>
+  </div>
+</div>
+
+<section class="bg-white dark:bg-gray-900 mt-5">
+    <div class="container flex flex-col items-center px-4 py-12 mx-auto text-center">
+        <h2 class="max-w-2xl mx-auto text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
+        Join the <span class="text-blue-500">NSCC KIET</span> Community.
+        </h2>
+
+        <p class="max-w-4xl mt-6 text-center text-gray-500 dark:text-gray-300">🚀 Join Our <strong> WhatsApp Community! </strong>
+Stay updated with the latest announcements, resources, and tips throughout the "Dev 101" bootcamp. Click the link below to join our WhatsApp group and connect with fellow participants!
+
+
+        </p>
+
+        <div class="inline-flex w-full mt-6 sm:w-auto">
+            <a href="https://chat.whatsapp.com/KllPLlFaOjzIGvEAlrOGil" class="inline-flex items-center justify-center w-full px-6 py-2 text-white duration-300 bg-blue-600 rounded-lg hover:bg-blue-500 focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+                Join Community
+            </a>
+        </div>
+    </div>
+</section>
+
+
       {/* <form onSubmit={formik.handleSubmit} className='mx-2'>
       
         <Input className="mt-4" value="name" label="Enter your Name" placeHolder="Aditya Tyagi" formikTouched={formik.touched.name} formikError={formik.errors.name} formikChange={formik.handleChange} formikBlur={formik.handleBlur} formikValue={formik.values.name} type="text" />

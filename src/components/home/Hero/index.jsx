@@ -2,6 +2,7 @@
 
 
 import PlayerAnimation from '@/components/player';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation'
 import { TypeAnimation } from 'react-type-animation';
  
@@ -42,8 +43,10 @@ const Hero = () => {
 
                             </h2>
                     
-                    <button className="   mt-7 lg:mt-16 w-full px-7 py-3   text-sm tracking-wider    animate-bounce text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500" onClick={() => router.push('/web')}>JOIN Web BOOTCAMP</button>
-                    <button className="w-full px-5 py-3 mt-6  text-sm tracking-wider animate-bounce text-white uppercase transition-colors duration-300 transform bg-blue-600 lg:ml-[3%] rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500" onClick={() => router.push('/android')}>JOIN Android BOOTCAMP</button>
+                    <a href="https://lu.ma/340obol9" target='_blank'>
+                    <button className="mt-7 lg:mt-16 w-full px-7 py-3   text-sm tracking-wider    animate-bounce text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">JOIN Web BOOTCAMP</button></a>
+                    <a href="https://lu.ma/hxnvasst" target='_blank'>
+                    <button className="w-full px-5 py-3 mt-6  text-sm tracking-wider animate-bounce text-white uppercase transition-colors duration-300 transform bg-blue-600 lg:ml-[3%] rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">JOIN Android BOOTCAMP</button></a>
                 </main>
             </main>
 
