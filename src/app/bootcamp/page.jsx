@@ -124,7 +124,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
   <div className="content-center justify-center w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
     <img
       className="object-cover w-full h-72"
-      src='/bootcamp/androidBootcamp.jpg'
+      src='/bootcamp/androidBootcamp.png'
       alt="avatar"
     />
     <div className="py-5 text-center">
@@ -139,7 +139,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
   <div className="w-full max-w-xs overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
     <img
       className="object-cover w-full h-72"
-      src='/bootcamp/webBootcamp.jpg'
+      src='/bootcamp/webBootcamp.png'
       alt="avatar"
     />
     <div className="py-5 text-center">
