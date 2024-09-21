@@ -21,11 +21,12 @@ export default function App() {
     { id: 1, link: "/", name: "Home" },
     { id: 2, link: "/about", name: "About" },
     { id: 3, link: "/projects", name: "Projects" },
-    { id: 4, link: "/resources", name: "Resources" },
-    // { id: 5, link: "/blogs", name: "Blogs" },
-    { id: 6, link: "/team", name: "Team" },
-    { id: 7, link: "/contact", name: "Contact Us" },
-    { id: 8, link: "/join", name: "JOIN" },
+    { id: 3, link: "/bootcamp", name: "Bootcamp" },
+    { id: 5, link: "/resources", name: "Resources" },
+    // { id: 6, link: "/blogs", name: "Blogs" },
+    { id: 7, link: "/team", name: "Team" },
+    { id: 8, link: "/contact", name: "Contact Us" },
+    { id: 9, link: "/join", name: "JOIN" },
   ];
 
   return (
