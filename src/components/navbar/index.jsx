@@ -42,13 +42,15 @@ export default function App() {
           className="sm:hidden"
         />
         <NavbarBrand className="mb-1.5">
-          <Image
-            src="/nscclogo.png"
-            width={130}
-            height={90}
-            className="mt-3"
-            alt="image"
-          />
+          <Link href="/">
+            <Image
+              src="/nscclogo.png"
+              width={130}
+              height={90}
+              className="mt-3"
+              alt="image"
+            />
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
