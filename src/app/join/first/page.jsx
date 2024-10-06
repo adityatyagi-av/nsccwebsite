@@ -111,6 +111,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL,process.env.N
         { label: 'MCA', value: 'mca' },
       ];
       const domainOptions = [
+        { label: 'Select Option', value: 'none' },
         { label: 'AI / ML', value: 'aiml' },
         { label: 'Android Development', value: 'android' },
         { label: 'AR / VR', value: 'arvr' },
