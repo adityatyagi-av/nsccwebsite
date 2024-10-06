@@ -8,7 +8,7 @@ const page = () => {
       <h2 className=" mx-auto max-w-screen-xl items-center text-center mb-6 font-sans text-3xl  font-bold leading-none tracking-tight text-gray-900 sm:text-4xl ">
             <span className="relative inline-block">
             
-              <span className="relative">Test <span className=''> Already </span>SUBMITTED</span>
+              <span className="relative">Form <span className=''> Succesfully </span>SUBMITTED</span>
             </span>{' '}
             <br />
             <br />
