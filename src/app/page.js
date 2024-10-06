@@ -17,7 +17,7 @@ const page = () => {
       <Step/>
       <CTA/>
       <Projects/>
-      
+    
       <Domains/>
       <Founder/>
       <CoreTeam/>
