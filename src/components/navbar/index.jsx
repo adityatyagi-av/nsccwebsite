@@ -27,7 +27,7 @@ export default function App() {
     // { id: 6, link: "/blogs", name: "Blogs" },
     { id: 7, link: "/team", name: "Team" },
     { id: 8, link: "/contact", name: "Contact Us" },
-    { id: 9, link: "../join", name: "JOIN" },
+    { id: 9, link: "../registrationClosed", name: "JOIN" },
   ];
 
   return (
