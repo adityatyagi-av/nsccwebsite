@@ -14,7 +14,7 @@ const ComingSoon = () => {
                     </span>
 
                     <span className="text-transparent bg-gradient-to-tr bg-clip-text from-yellow-500 via-pink-500 to-red-500 ">
-                        Soon
+                        Soon...
                     </span>
                 </h1>
 
