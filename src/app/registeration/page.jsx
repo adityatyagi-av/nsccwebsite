@@ -242,6 +242,7 @@
 
 "use client";
 import React, { useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Select from "react-select";
@@ -482,6 +483,27 @@ function Registration() {
                 />
                 <ErrorMessage name="hacker_rank_id" component="div" className="text-red-500" />
               </div>
+              <div className="border border-gray-300 rounded-lg p-6 shadow-lg bg-gray-100 flex flex-col sm:flex-row items-center justify-between mb-10">
+  {/* WhatsApp Icon */}
+  <div className="flex items-center">
+    <FaWhatsapp className="text-green-600 text-3xl" />
+    <h2 className="ml-4 text-md sm:text-lg font-semibold text-gray-800">
+      Join the CodeRush 2.0 WhatsApp Group
+    </h2>
+  </div>
+
+  {/* Join Button */}
+  <div className="mt-2 px-6 py-2 bg-green-600 text-white font-medium rounded-lg shadow-md hover:bg-green-700 text-center">
+    <a
+      href="https://chat.whatsapp.com/E1S272AtJba3f0hp89N3E4"
+      target="_blank"
+      rel="noopener noreferrer"
+      className=""
+    >
+      Join Group
+    </a>
+  </div>
+</div>
               <div className="text-center">
                 <button
                   type="submit"
