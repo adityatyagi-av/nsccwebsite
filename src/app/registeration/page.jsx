@@ -242,6 +242,7 @@
 
 "use client";
 import React, { useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Select from "react-select";
@@ -316,32 +317,53 @@ function Registration() {
     setLoading(true);
     setSuccess(false);
     setError(false);
-
-    const { data, error } = await supabase
-      .from("CodeRush_2.0_registration")
-      .insert([
-        {
-          name: values.full_name,
-          cllg_id: values.student_id,
-          kiet_email: values.college_email,
-          branch: values.department.value,
-          year: values.year_of_study.value,
-          number: values.phone_number,
-          preferred_language: values.preferred_programming_language,
-          experience: values.programming_experience,
-          hacker_rank_id: values.hacker_rank_id,
-        },
-      ]);
-
-    setLoading(false);
-
-    if (error) {
-      setError(true);
-    } else {
+  
+    try {
+      const { data: existingStudent, error: fetchError } = await supabase
+        .from("CodeRush_2.0_registration")
+        .select("id")
+        .eq("kiet_email", values.college_email);
+  
+      if (fetchError) {
+        throw fetchError;
+      }
+  
+      if (existingStudent && existingStudent.length > 0) { 
+        setError("You have already registered with this email.");
+        setLoading(false);
+        return;
+      }
+  
+      const { data, error: insertError } = await supabase
+        .from("CodeRush_2.0_registration")
+        .insert([
+          {
+            name: values.full_name,
+            cllg_id: values.student_id,
+            kiet_email: values.college_email,
+            branch: values.department.value,
+            year: values.year_of_study.value,
+            number: values.phone_number,
+            preferred_language: values.preferred_programming_language,
+            experience: values.programming_experience,
+            hacker_rank_id: values.hacker_rank_id,
+          },
+        ]);
+  
+      if (insertError) {
+        throw insertError;
+      }
+  
       setSuccess(true);
+    } catch (error) {
+      console.error("Error:", error.message);
+      setError("An error occurred. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
 
+  
   return (
     <div className="App">
       <Image src={img} alt="poster" className="mb-12 sm:mb-14 md:16" />
@@ -365,7 +387,7 @@ function Registration() {
         <div className="text-center mb-6 flex flex-col justify-center items-center">
           <Image src={errorImg} alt="Error" width={50} height={50} />
           <p className="text-red-500 font-semibold">
-            Form not submitted. Try again!
+          {error}
           </p>
         </div>
       )}
@@ -461,6 +483,27 @@ function Registration() {
                 />
                 <ErrorMessage name="hacker_rank_id" component="div" className="text-red-500" />
               </div>
+              <div className="border border-gray-300 rounded-lg p-6 shadow-lg bg-gray-100 flex flex-col sm:flex-row items-center justify-between mb-10">
+  {/* WhatsApp Icon */}
+  <div className="flex items-center">
+    <FaWhatsapp className="text-green-600 text-3xl" />
+    <h2 className="ml-4 text-md sm:text-lg font-semibold text-gray-800">
+      Join the CodeRush 2.0 WhatsApp Group
+    </h2>
+  </div>
+
+  {/* Join Button */}
+  <div className="mt-2 px-6 py-2 bg-green-600 text-white font-medium rounded-lg shadow-md hover:bg-green-700 text-center">
+    <a
+      href="https://chat.whatsapp.com/E1S272AtJba3f0hp89N3E4"
+      target="_blank"
+      rel="noopener noreferrer"
+      className=""
+    >
+      Join Group
+    </a>
+  </div>
+</div>
               <div className="text-center">
                 <button
                   type="submit"
@@ -478,3 +521,33 @@ function Registration() {
 }
 
 export default Registration;
+
+
+
+
+
+
+
+
+// TO CHECK DATA IN SUPABASE
+
+// import { createClient } from '@supabase/supabase-js';
+
+// const supabaseUrl = 'https://txauxutvvkggkbafzypo.supabase.co';
+// const supabaseKey = 'key';
+// console.log(supabaseUrl, supabaseKey);
+// const supabase = createClient(supabaseUrl, supabaseKey);
+
+// async function fetchData() {
+//   const { data, error } = await supabase
+//     .from('CodeRush_2.0_registration') // Replace with your table name
+//     .select('*'); // Replace '*' with specific columns if needed
+
+//   if (error) {
+//     console.error('Error fetching data:', error);
+//   } else {
+//     console.log('Data:', data);
+//   }
+// }
+
+// fetchData();

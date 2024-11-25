@@ -319,7 +319,7 @@ function Page() {
       <div className="flex flex-col items-center justify-center min-h-screen">
         <div className="group">
           <h1
-            className="lg:text-7xl md:text-6xl sm:text-5xl text-3xl text-blue-500 font-bold mb-6 text-center cursor-pointer group tracking-wide"
+            className="lg:text-7xl md:text-6xl sm:text-5xl text-4xl text-blue-500 font-bold mb-6 text-center cursor-pointer group tracking-wide"
             onMouseEnter={() => setIsHoveringText(true)}
             onMouseLeave={() => setIsHoveringText(false)}
           >
@@ -334,7 +334,7 @@ function Page() {
           </h1>
         </div>
 
-        <p className="lg:text-lg text-sm mb-8 text-gray-600 md:w-1/2 w-full mx-8 text-center">
+        <p className="lg:text-lg text-sm mb-8 text-gray-600 md:w-1/2 w-full mx-12 sm:mx-8 text-center">
           Get ready to code{" "}
           <span className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-500 bg-clip-text text-transparent font-semibold">
             NSCC KIET
@@ -378,7 +378,7 @@ function Page() {
           <div className="absolute w-1 md:w-2 bg-blue-500 left-1/2 transform -translate-x-1/2 h-full"></div>
  
           <div className="flex items-center justify-center mb-12" data-aos="fade-up">
-            <div className="sm:w-1/2 xl:w-1/3 w-full pr-1 md:pr-8 text-right">
+            <div className="sm:w-1/2 xl:w-1/3 w-full pr-2 sm:pr-4 md:pr-8 text-right">
               <p className="font-bold text-xs md:text-lg">Registration Starts</p>
               <p className="text-gray-600 text-xs md:text-sm">25th November</p>
             </div>
@@ -387,14 +387,14 @@ function Page() {
  
           <div className="flex items-center justify-center mb-12" data-aos="fade-up">
             <div className="md:w-8 md:h-8 w-4 h-4 bg-blue-500 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
-            <div className="sm:w-1/2 xl:w-1/3 w-full pl-1 md:pl-8 text-left">
+            <div className="sm:w-1/2 xl:w-1/3 w-full pl-2 sm:pl-4 md:pl-8 text-left">
               <p className="font-bold text-xs md:text-lg">Registration Ends</p>
               <p className="text-gray-600 text-xs md:text-sm">29th November</p>
             </div>
           </div>
  
           <div className="flex items-center justify-center mb-12" data-aos="fade-up">
-            <div className="sm:w-1/2 xl:w-1/3 w-full pr-1 md:pr-8 text-right">
+            <div className="sm:w-1/2 xl:w-1/3 w-full pr-2 sm:pr-4 md:pr-8 text-right">
               <p className="font-bold text-xs md:text-lg">Contest Date</p>
               <p className="text-gray-600 text-xs md:text-sm">1st December</p>
               <p className="text-gray-600 text-xs md:text-sm font-semibold">9pm - 12pm</p>
@@ -404,7 +404,7 @@ function Page() {
  
           <div className="flex items-center justify-center mb-12" data-aos="fade-up">
             <div className="md:w-8 md:h-8 w-4 h-4 bg-blue-500 rounded-full absolute left-1/2 transform -translate-x-1/2"></div>
-            <div className="sm:w-1/2 xl:w-1/3 w-full pl-1 md:pl-8 text-left">
+            <div className="sm:w-1/2 xl:w-1/3 w-full pl-2 sm:pl-4 md:pl-8 text-left">
               <p className="font-bold text-xs md:text-lg">Result Date</p>
               <p className="text-gray-600 text-xs md:text-sm">TBD</p>
             </div>
