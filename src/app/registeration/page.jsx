@@ -478,3 +478,33 @@ function Registration() {
 }
 
 export default Registration;
+
+
+
+
+
+
+
+
+// TO CHECK DATA IN SUPABASE
+
+// import { createClient } from '@supabase/supabase-js';
+
+// const supabaseUrl = 'https://txauxutvvkggkbafzypo.supabase.co';
+// const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR4YXV4dXR2dmtnZ2tiYWZ6eXBvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzIzODA0NzksImV4cCI6MjA0Nzk1NjQ3OX0.vzds8uDNrpce2b9eIucdW0EEs4KuDJNtMyNNShHBZpw';
+// console.log(supabaseUrl, supabaseKey);
+// const supabase = createClient(supabaseUrl, supabaseKey);
+
+// async function fetchData() {
+//   const { data, error } = await supabase
+//     .from('CodeRush_2.0_registration') // Replace with your table name
+//     .select('*'); // Replace '*' with specific columns if needed
+
+//   if (error) {
+//     console.error('Error fetching data:', error);
+//   } else {
+//     console.log('Data:', data);
+//   }
+// }
+
+// fetchData();
