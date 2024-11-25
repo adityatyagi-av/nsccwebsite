@@ -316,32 +316,53 @@ function Registration() {
     setLoading(true);
     setSuccess(false);
     setError(false);
-
-    const { data, error } = await supabase
-      .from("CodeRush_2.0_registration")
-      .insert([
-        {
-          name: values.full_name,
-          cllg_id: values.student_id,
-          kiet_email: values.college_email,
-          branch: values.department.value,
-          year: values.year_of_study.value,
-          number: values.phone_number,
-          preferred_language: values.preferred_programming_language,
-          experience: values.programming_experience,
-          hacker_rank_id: values.hacker_rank_id,
-        },
-      ]);
-
-    setLoading(false);
-
-    if (error) {
-      setError(true);
-    } else {
+  
+    try {
+      const { data: existingStudent, error: fetchError } = await supabase
+        .from("CodeRush_2.0_registration")
+        .select("id")
+        .eq("kiet_email", values.college_email);
+  
+      if (fetchError) {
+        throw fetchError;
+      }
+  
+      if (existingStudent && existingStudent.length > 0) { 
+        setError("You have already registered with this email.");
+        setLoading(false);
+        return;
+      }
+  
+      const { data, error: insertError } = await supabase
+        .from("CodeRush_2.0_registration")
+        .insert([
+          {
+            name: values.full_name,
+            cllg_id: values.student_id,
+            kiet_email: values.college_email,
+            branch: values.department.value,
+            year: values.year_of_study.value,
+            number: values.phone_number,
+            preferred_language: values.preferred_programming_language,
+            experience: values.programming_experience,
+            hacker_rank_id: values.hacker_rank_id,
+          },
+        ]);
+  
+      if (insertError) {
+        throw insertError;
+      }
+  
       setSuccess(true);
+    } catch (error) {
+      console.error("Error:", error.message);
+      setError("An error occurred. Please try again.");
+    } finally {
+      setLoading(false);
     }
   };
 
+  
   return (
     <div className="App">
       <Image src={img} alt="poster" className="mb-12 sm:mb-14 md:16" />
@@ -365,7 +386,7 @@ function Registration() {
         <div className="text-center mb-6 flex flex-col justify-center items-center">
           <Image src={errorImg} alt="Error" width={50} height={50} />
           <p className="text-red-500 font-semibold">
-            Form not submitted. Try again!
+          {error}
           </p>
         </div>
       )}
@@ -491,7 +512,7 @@ export default Registration;
 // import { createClient } from '@supabase/supabase-js';
 
 // const supabaseUrl = 'https://txauxutvvkggkbafzypo.supabase.co';
-// const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR4YXV4dXR2dmtnZ2tiYWZ6eXBvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzIzODA0NzksImV4cCI6MjA0Nzk1NjQ3OX0.vzds8uDNrpce2b9eIucdW0EEs4KuDJNtMyNNShHBZpw';
+// const supabaseKey = 'key';
 // console.log(supabaseUrl, supabaseKey);
 // const supabase = createClient(supabaseUrl, supabaseKey);
 
