@@ -27,9 +27,9 @@ const aimlprojects=[
         projectLink:'https://github.com/VikasKumar2001/CodeClause_Resume_Parser',
     },
     {
-        id:4,
-        title:'3 layer cypher encryption',
-        developer:'Vikas Kumar',
+        id:5,
+        title:'SocialKArt',
+        developer:'Aditya Singh',
         projectImage:'/projects/aiml/threelayer.jpg',
         imageUrl:'https://media.licdn.com/dms/image/C4D03AQFlLMURb7sKxQ/profile-displayphoto-shrink_400_400/0/1655796639359?e=1703116800&v=beta&t=7GDdzIurH1R25Bjo10mwCn8M4nrMLqmf2IBFoAe4TA4',
         profileLink:'https://www.linkedin.com/in/vikaskumar142001/',
@@ -39,12 +39,12 @@ const aimlprojects=[
 const arvrprojects=[
     {
         id:1,
-        title:'',
-        developer:'',
-        projectImage:'',
+        title:'ZenVerse',
+        developer:'Akshat Shukla',
+        projectImage:'/projects/arvr/zenverse.png',
         imageUrl:'',
-        profileLink:'',
-        projectLink:'',
+        profileLink:'https://www.linkedin.com/in/as-akshat-shukla/',
+        projectLink:'https://github.com/Nemesis-AS/nscc-innotech24-vr',
     }
 ]
 const androidprojects=[

@@ -11,10 +11,10 @@ const EventsTable = ({ events = [
     name: "Dev 101",
     slug:"dev-101",
     status: "Completed",
-    date: "2023-01-01",
+    date: "30-09-2024",
     about: {
-      title: "Content curating app",
-      description: "Brings all your news into one place"
+      title: "Beginners Bootcamp",
+      description: "A beginner-friendly bootcamp introducing students to Web Dev, Android Dev, and Git & GitHub essentials"
     },
     participants: 100
   },
@@ -22,48 +22,27 @@ const EventsTable = ({ events = [
     id: 2,
     name: "Code Rush",
     slug:"code-rush",
-    status: "Upcoming",
-    date: "2023-01-01",
+    status: "Active",
+    date: "01-12-2024",
     about: {
-      title: "Design software",
-      description: "Super lightweight design app"
+      title: "Coding Competetion",
+      description: "Online coding competition held in for the students"
     },
-    participants: "NA"
+    participants: "200"
   },
   {
     id: 3,
-    name: "Sample",
-    slug:"sample",
-    status: "Active",
-    date: "2023-01-01",
+    name: "Open Source Competetion",
+    slug:"open-source",
+    status: "Upcoming",
+    date: "01-02-2025",
     about: {
-      title: "Automation and workflow",
-      description: "Time tracking, invoicing and expenses"
+      title: "Open Source Contributions",
+      description: "Encouraging and rewarding students for open source contributions."
     },
-    participants: 8
+    participants: "NA"
   },
-  {
-    id: 4,
-    name: "Hourglass",
-    status: "Churned",
-    date: "2023-01-01",
-    about: {
-      title: "Productivity app",
-      description: "Time management and productivity"
-    },
-    participants: 8
-  },
-  {
-    id: 5,
-    name: "Quotient",
-    status: "event",
-    date: "2023-01-01",
-    about: {
-      title: "Sales CRM",
-      description: "Web-based sales doc management"
-    },
-    participants: 8
-  }
+  
 ] }) => {
   // Function to determine status style
   const getStatusStyle = (status) => {
