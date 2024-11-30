@@ -21,8 +21,12 @@ export default function App() {
     { id: 1, link: "/", name: "Home" },
     { id: 2, link: "/about", name: "About" },
     { id: 3, link: "/projects", name: "Projects" },
+
+    { id: 3, link: "/events", name: "Events" },
+
     { id: 4, link: "/coderush", name: "CodeRush 2.0" },
     // { id: 3, link: "/bootcamp", name: "Bootcamp" },
+
     { id: 5, link: "/resources", name: "Resources" },
     // { id: 6, link: "/blogs", name: "Blogs" },
     { id: 7, link: "/team", name: "Team" },

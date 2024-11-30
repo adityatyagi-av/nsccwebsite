@@ -12,7 +12,9 @@
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "@nextui-org/accordion": "^2.0.32",
     "@nextui-org/react": "^2.1.13",
+
     "@supabase/supabase-js": "^2.46.1",
+
     "aos": "^2.3.4",
     "autoprefixer": "10.4.16",
     "axios": "^1.5.1",
