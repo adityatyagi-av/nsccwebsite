@@ -355,7 +355,7 @@ function Page() {
   ))}
 </div>
 
-<Link href="/registeration">
+<Link href="/registrationClosed">
 <button className="flex items-center px-4 py-2 sm:px-6 sm:py-3 text-white bg-blue-600 rounded-lg text-lg font-bold shadow-lg hover:shadow-xl transition-shadow duration-300 hover:bg-blue-700 md:mb-8 mb-2"
 >
   Register Now

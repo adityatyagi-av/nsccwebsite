@@ -44,9 +44,9 @@ const Hero = () => {
                             </h2>
                     
                             <div onClick={() => router.push(`/events/code-rush`)}>
-  <button className="mt-7 lg:mt-16 w-full px-7 py-3 text-sm tracking-wider animate-bounce text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
+  {/* <button className="mt-7 lg:mt-16 w-full px-7 py-3 text-sm tracking-wider animate-bounce text-white uppercase transition-colors duration-300 transform bg-blue-600 rounded-lg lg:w-auto hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
     JOIN CodeRush
-  </button>
+  </button> */}
 </div>
 
                     
